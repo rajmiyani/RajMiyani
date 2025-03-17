@@ -1,0 +1,40 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skills-section {
+    background-color: #121212;
+    padding: 50px 0;
+
+    .skill-icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+    // .dark-icon {
+    //     filter: brightness(1000) invert(1); 
+    // }
+
+    .small-icon {
+        width: 40px;
+    }
+
+    h5 {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,33 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.skills-section {
+  background-color: #121212;
+  padding: 50px 0;
+}
+.skills-section .skill-icon {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.skills-section .small-icon {
+  width: 40px;
+}
+.skills-section h5 {
+  font-size: 14px;
+  text-align: center;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=style.css.map */
