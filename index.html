@@ -26,13 +26,55 @@
                 <h1 class="fs-3 py-1 border px-3 rounded-pill">R M</h1>
             </div>
             <div class="d-none d-lg-block ">
-                <a href="/" class="text-white mx-3 text-decoration-none ">HOME</a>
-                <a href="/about.html" class="text-white mx-3 text-decoration-none ">ABOUT Us</a>
-                <a href="" class="text-white mx-3 text-decoration-none">PROJECTS</a>
-                <a href="" class="text-white mx-3 text-decoration-none ">CERTIFICATES</a>
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/project.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/certificate.html">Certificate</a>
+                    </li>
+                </ul>
             </div>
+
             <div>
-                <a href="" class="fs-3"><i class="fa-bars text-white fa-solid"></i></a>
+                <i class="fa-bars text-white fa-solid" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                </i>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+
+                    <div class="offcanvas-header d-flex justify-content-between align-items-center text-black m-3 w-100">
+                        <h1 class="fs-3 py-1 border px-3 rounded-pill">R M</h1>
+                        <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>                    
+
+                    <div class="offcanvas-body text-black">
+                        <div class="d-none d-lg-block ">
+                            <ul class="nav nav-underline  flex-column text-black">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-black  " aria-current="page"
+                                        href="/index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black " href="/about.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black  " href="/project.html">Project</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black  " href="/certificate.html">Certificate</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -327,6 +369,9 @@
             </div>
         </div>
     </section> -->
+
+    <!-- Bootstrap JS (for navbar toggling) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script
 
 </body>
 
