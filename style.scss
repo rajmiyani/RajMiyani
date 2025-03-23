@@ -6,3 +6,20 @@
 }
 
 
+.container {
+    .row {
+        .card {
+            position: relative;
+        
+            img {
+                transition: transform 0.3s ease-in-out;
+                display: block;
+        
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        
+    }
+}
