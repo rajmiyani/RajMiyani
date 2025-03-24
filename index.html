@@ -21,61 +21,58 @@
 
 <body class="bg-black">
     <header>
-        <div class="container d jb d-flex text-white a py-4 justify-content-between align-items-center">
-            <div class="">
-                <h1 class="fs-3 py-1 border px-3 rounded-pill">R M</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top py-3">
+            <div class="container">
+                <a class="navbar-brand border border-white rounded-pill px-3 py-1 text-white fw-bold" href="#">R M</a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <i class="fas fa-bars text-white fs-4"></i>
+                </button>
+
+                <!-- ✅ Desktop Navigation -->
+                <div class="collapse navbar-collapse d-none d-lg-block">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/project.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/certificate.html">Certificate</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="d-none d-lg-block ">
-                <ul class="nav nav-underline">
+        </nav>
+
+        <!-- ✅ Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <h1 class="border border-dark rounded-pill px-3 py-1 text-dark fw-bold">R M</h1>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
+                        <a class="nav-link text-dark" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/about.html">About Us</a>
+                        <a class="nav-link text-dark" href="/about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/project.html">Project</a>
+                        <a class="nav-link text-dark" href="/project.html">Project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/certificate.html">Certificate</a>
+                        <a class="nav-link text-dark" href="/certificate.html">Certificate</a>
                     </li>
                 </ul>
-            </div>
-
-            <div>
-                <i class="fa-bars text-white fa-solid fs-4" data-bs-toggle="offcanvas" href="#offcanvasExample"
-                    role="button" aria-controls="offcanvasExample">
-                </i>
-
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel">
-                    <div
-                        class="offcanvas-header d-flex justify-content-between align-items-center text-black m-3 w-100">
-                        <h1 class="fs-3 py-1 border px-3 rounded-pill">R M</h1>
-                        <button type="button" class="btn-close me-2 shadow-none" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-
-                    <div class="offcanvas-body text-black">
-                        <div class="d-none d-lg-block ">
-                            <ul class="nav nav-underline  flex-column text-black">
-                                <li class="nav-item">
-                                    <a class="nav-link active text-black  " aria-current="page"
-                                        href="/index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-black " href="/about.html">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-black  " href="/project.html">Project</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-black  " href="/certificate.html">Certificate</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -152,7 +149,7 @@
         <h1 class="z2 m-0 my-5 text-center fs-title-small" style="font-size: 70px">
             SERVICES
         </h1>
-    
+
         <div class="container">
             <div class="row">
                 <!-- Service 1: Web Development -->
@@ -185,7 +182,7 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
 
     <!-- skills -->
 
@@ -420,11 +417,12 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Card 2 -->
                 <div class="education-card p-3 col-sm-12 col-md-6 col-lg-4">
                     <div class="bg-black rounded border border-secondary">
-                        <img src="assets/education.jpg" class="w-100" style="background-repeat: no-repeat;" alt="MERN Stack Development">
+                        <img src="assets/education.jpg" class="w-100" style="background-repeat: no-repeat;"
+                            alt="MERN Stack Development">
                         <div class="p-3">
                             <h6>2. VEER NARMAD SOUTH GUJARAT UNIVERSITY</h6>
                             <p>I have successfully completed a MERN Stack Development Course from Veer Narmad South
@@ -434,7 +432,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Card 3 -->
                 <div class="education-card p-3 col-sm-12 col-md-6 col-lg-4">
                     <div class="bg-black rounded border border-secondary">
@@ -450,7 +448,7 @@
                 </div>
             </div>
         </div>
-        
+
 
     </section>
 
