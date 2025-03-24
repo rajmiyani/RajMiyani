@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raj Miyani</title>
     <link rel="shortcut icon" href="../assets/IMG-20241230-WA0137.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
 
     <link rel="stylesheet" href="./links/bootstrap.min.css" />
     <link rel="stylesheet" href="./links/all.min.css" />
@@ -49,7 +49,6 @@
 
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                     aria-labelledby="offcanvasExampleLabel">
-
                     <div
                         class="offcanvas-header d-flex justify-content-between align-items-center text-black m-3 w-100">
                         <h1 class="fs-3 py-1 border px-3 rounded-pill">R M</h1>
@@ -83,10 +82,10 @@
 
     <!-- intro -->
     <section class="my-lg-5 py-lg-5" id="aboutme">
-        <div class="position-relative container d-flex flex-column-reverse flex-lg-row">
-            <div class="col-lg-7 px-3 py-5 d j fc text-light about-content text-center text-lg-start">
+        <div class="container d-flex flex-column-reverse flex-lg-row align-items-center">
+            <div class="col-lg-7 px-3 py-5 text-light about-content text-center text-lg-start">
                 <h1>Hello, It's Me</h1>
-                <h1 style="font-size: 85px" class="fw-bold">Raj Miyani</h1>
+                <h1 class="fw-bold" style="font-size: 85px;">Raj Miyani</h1>
                 <h3>BUILDING WEB EXPERIENCE BETTER</h3>
                 <div class="my-4">
                     <a href="https://www.instagram.com/raj_miyani_15/" target="_blank">
@@ -102,7 +101,7 @@
                             style="padding: 10px 11px"></i>
                     </a>
                 </div>
-                <div class="">
+                <div>
                     <a href="/about.html"
                         class="px-4 py-3 d-inline-block text-white border border-2 rounded-pill text-decoration-none fs-5"
                         style="max-width: 100%; white-space: nowrap;">
@@ -111,8 +110,8 @@
                 </div>
             </div>
             <div class="col-lg-5 col-12 px-lg-5 px-3 d-flex justify-content-center">
-                <img src="/assets/IMG-20241230-WA0137.jpg" class="rounded-circle img-fluid" style="width: 500px; height: 500px; object-fit: cover;" alt="Raj Miyani" />
-            </div>            
+                <img src="/assets/IMG-20241230-WA0137.jpg" class="profile-img img-fluid" alt="Raj Miyani" />
+            </div>
         </div>
     </section>
 
@@ -153,34 +152,40 @@
         <h1 class="z2 m-0 my-5 text-center fs-title-small" style="font-size: 70px">
             SERVICES
         </h1>
-
-        <div class="container d-flex ">
-            <div class="col-lg-3 col-6 p-2">
-                <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                    <img width="100%" src="assets/Web-Development.jpg" alt="" />
-                    <h6 class="m-0 mt-2">1. Web Development</h6>
+    
+        <div class="container">
+            <div class="row">
+                <!-- Service 1: Web Development -->
+                <div class="col-12 col-sm-6 col-lg-3 p-2">
+                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
+                        <img width="100%" src="assets/Web-Development.jpg" alt="Web Development" />
+                        <h6 class="m-0 mt-2">1. Web Development</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-6 p-2">
-                <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                    <img width="100%" src="assets/Frontend.jpg" alt="" />
-                    <h6 class="m-0 mt-2">2. Frontend Development</h6>
+                <!-- Service 2: Frontend Development -->
+                <div class="col-12 col-sm-6 col-lg-3 p-2">
+                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
+                        <img width="100%" src="assets/Frontend.jpg" alt="Frontend Development" />
+                        <h6 class="m-0 mt-2">2. Frontend Development</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-6 p-2">
-                <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                    <img width="102%" src="assets/Backend.jpeg" alt="" />
-                    <h6 class="m-0 mt-2">3. Backend Development</h6>
+                <!-- Service 3: Backend Development -->
+                <div class="col-12 col-sm-6 col-lg-3 p-2">
+                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
+                        <img width="100%" src="assets/Backend.jpeg" alt="Backend Development" />
+                        <h6 class="m-0 mt-2">3. Backend Development</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-6 p-2">
-                <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                    <img width="105%" src="assets/Wordpress.png" alt="" />
-                    <h6 class="m-0 mt-2">4. Wordpress Development</h6>
+                <!-- Service 4: Wordpress Development -->
+                <div class="col-12 col-sm-6 col-lg-3 p-2">
+                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
+                        <img width="100%" src="assets/Wordpress.png" alt="Wordpress Development" />
+                        <h6 class="m-0 mt-2">4. Wordpress Development</h6>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <!-- skills -->
 
@@ -402,9 +407,9 @@
             CERTIFICATES
         </h1>
         <div class="container mt-5">
-            <div class="education-container d-flex flex-nowrap justify-content-center">
+            <div class="education-container row justify-content-center">
                 <!-- Card 1 -->
-                <div class="education-card p-3 " style="width: 100%;">
+                <div class="education-card p-3 col-sm-12 col-md-6 col-lg-4">
                     <div class="bg-black rounded border border-secondary">
                         <img src="assets/Morsy.jpg" class="w-100" alt="Morsy Multimedia">
                         <div class="p-3">
@@ -415,9 +420,9 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Card 2 -->
-                <div class="education-card p-3" style="width: 100%;">
+                <div class="education-card p-3 col-sm-12 col-md-6 col-lg-4">
                     <div class="bg-black rounded border border-secondary">
                         <img src="assets/education.jpg" class="w-100" style="background-repeat: no-repeat;" alt="MERN Stack Development">
                         <div class="p-3">
@@ -429,9 +434,9 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Card 3 -->
-                <div class="education-card p-3" style="width: 100%;">
+                <div class="education-card p-3 col-sm-12 col-md-6 col-lg-4">
                     <div class="bg-black rounded border border-secondary">
                         <img src="assets/vnsgu.jpg" class="w-100" style="height: 265px;" alt="Education Image">
                         <div class="p-3">
@@ -445,6 +450,7 @@
                 </div>
             </div>
         </div>
+        
 
     </section>
 
