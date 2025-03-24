@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+header .container .navbar-collapse .nav-underline .nav-link.active {
+  border-bottom: 3px solid white;
+}
+
 .container {
   flex-direction: column-reverse;
 }
