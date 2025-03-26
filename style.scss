@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+// ✅ Navbar active link styling
 header {
     .container {
         .navbar-collapse {
@@ -15,41 +16,34 @@ header {
     }
 }
 
+// ✅ Container layout adjustments
 .container {
     flex-direction: column-reverse;
 
     @media (min-width: 768px) {
         flex-direction: row;
     }
+}
 
-    .profile-img {
-        width: 500px;
-        height: 500px;
-        object-fit: cover;
-        border-radius: 50%; // Ensures a circular shape
+// ✅ Profile image styling
+.profile-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
 
-        // Ensure a perfect circle for screen sizes 992px to 1399px
-        @media (min-width: 992px) and (max-width: 1399px) {
-            width: 350px;
-            height: 350px;
-            border-radius: 50%; // Ensures a perfect circle
-        }
+    @media (min-width: 992px) and (max-width: 1399px) {
+        width: 350px;
+        height: 350px;
+    }
 
-        @media (min-width: 768px) and (max-width: 992px) {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-        }
+    @media (min-width: 768px) and (max-width: 992px) {
+        width: 300px;
+        height: 300px;
+    }
 
-        // @media (min-width: 992px) {
-        //     flex-direction: row; // Side-by-side layout for larger screens
-        // }
-
-        // Mobile size adjustment
-        @media (max-width: 768px) {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-        }
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 300px;
     }
 }
