@@ -26,7 +26,7 @@
             <div>
                 <h1 class="fs-3 py-1 border px-3 rounded-pill">R M</h1>
             </div>
-    
+
             <!-- Desktop Navigation -->
             <div class="d-none d-lg-block">
                 <ul class="nav nav-underline">
@@ -47,21 +47,21 @@
                     </li>
                 </ul>
             </div>
-    
+
             <!-- ✅ Offcanvas Toggle Button -->
-            <button class="border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas" 
+            <button class="border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <i class="fa-solid fa-bars text-white fs-4"></i>
             </button>
         </div>
-    
+
         <!-- ✅ Offcanvas Menu (Fixed) -->
         <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasExample">
             <div class="offcanvas-header d-flex justify-content-between align-items-center w-100">
                 <h1 class="fs-3 py-1 border px-3 rounded-pill text-dark">R M</h1>
                 <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas"></button>
             </div>
-    
+
             <div class="offcanvas-body">
                 <ul class="nav nav-underline flex-column">
                     <li class="nav-item">
@@ -128,7 +128,7 @@
             url="https://prod.spline.design/owcbLMDqmRh-PrdD/scene.splinecode"
           ></spline-viewer> -->
 
-                <spline-viewer url="https://prod.spline.design/7ix3k8IoIhm8AdvH/scene.splinecode"></spline-viewer>
+                <!-- <spline-viewer url="https://prod.spline.design/7ix3k8IoIhm8AdvH/scene.splinecode"></spline-viewer> -->
             </div>
             <div class="col-lg-6"></div>
             <div class="col-lg-6 text-white d z2 j fc">
@@ -151,43 +151,85 @@
     </section>
 
     <!-- services -->
-
-    <section class="my-lg-5 pt-1 text-white">
-        <h1 class="z2 m-0 my-5 text-center fs-title-small" style="font-size: 70px">
-            SERVICES
-        </h1>
+    <section class="my-lg-5 pt-1 text-white services">
+        <h1 class="z2 m-0 my-5 text-center fs-title-small" style="font-size: 70px">SERVICES</h1>
 
         <div class="container">
-            <div class="row">
-                <!-- Service 1: Web Development -->
+            <!-- Grid Layout for Large Screens (Hidden on Small Screens) -->
+            <div class="row d-none d-lg-flex">
                 <div class="col-12 col-sm-6 col-lg-3 p-2">
                     <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                        <img width="100%" src="assets/Web-Development.jpg" alt="Web Development" />
+                        <img class="zoom-img" width="100%" src="assets/Web-Development.jpg" alt="Web Development">
                         <h6 class="m-0 mt-2">1. Web Development</h6>
                     </div>
                 </div>
-                <!-- Service 2: Frontend Development -->
                 <div class="col-12 col-sm-6 col-lg-3 p-2">
                     <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                        <img width="100%" src="assets/Frontend.jpg" alt="Frontend Development" />
+                        <img width="100%" src="assets/Frontend.jpg" alt="Frontend Development">
                         <h6 class="m-0 mt-2">2. Frontend Development</h6>
                     </div>
                 </div>
-                <!-- Service 3: Backend Development -->
                 <div class="col-12 col-sm-6 col-lg-3 p-2">
                     <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                        <img width="100%" src="assets/Backend.jpeg" alt="Backend Development" />
+                        <img width="100%" src="assets/Backend.jpeg" alt="Backend Development">
                         <h6 class="m-0 mt-2">3. Backend Development</h6>
                     </div>
                 </div>
-                <!-- Service 4: Wordpress Development -->
                 <div class="col-12 col-sm-6 col-lg-3 p-2">
                     <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                        <img width="100%" src="assets/Wordpress.png" alt="Wordpress Development" />
+                        <img width="100%" src="assets/Wordpress.png" alt="Wordpress Development">
                         <h6 class="m-0 mt-2">4. Wordpress Development</h6>
                     </div>
                 </div>
             </div>
+
+            <!-- Carousel for Small Screens (Hidden on Large Screens) -->
+            <!-- Carousel Container -->
+            <div id="servicesCarousel" class="carousel slide d-block d-lg-none" data-bs-ride="carousel"
+                style="position: relative;">
+
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="rounded-3 text-center p-3 mx-auto"
+                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
+                            <img class="zoom-img" width="100%" src="assets/Web-Development.jpg" alt="Web Development">
+                            <h6 class="m-0 mt-2">1. Web Development</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="rounded-3 text-center p-3 mx-auto"
+                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
+                            <img width="100%" src="assets/Frontend.jpg" alt="Frontend Development">
+                            <h6 class="m-0 mt-2">2. Frontend Development</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="rounded-3 text-center p-3 mx-auto"
+                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
+                            <img width="100%" src="assets/Backend.jpeg" alt="Backend Development">
+                            <h6 class="m-0 mt-2">3. Backend Development</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="rounded-3 text-center p-3 mx-auto"
+                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
+                            <img width="100%" src="assets/Wordpress.png" alt="Wordpress Development">
+                            <h6 class="m-0 mt-2">4. Wordpress Development</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Positioned Indicators -->
+                <div class="carousel-indicators" style="bottom: -50px;">
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -198,82 +240,98 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg"
-                        class="skill-icon w-50" />
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg" class="skill-icon w-50" />
+                    </a>
                     <h6 class="text-white mt-3">HTML</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg"
-                        class="skill-icon w-50" />
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg" class="skill-icon w-50" />
+                    </a>
                     <h6 class="text-white mt-3">CSS</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
-                        class="skill-icon w-50" />
-                    <h6 class="text-white mt-5">TAILWIND CSS</h6>
+                    <a href="https://tailwindcss.com/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" class="skill-icon w-50" />
+                    </a>
+                    <h6 class="text-white mt-3">TAILWIND CSS</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg"
-                        class="skill-icon w-50 " />
+                    <a href="https://getbootstrap.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg" class="skill-icon w-50" />
+                    </a>
                     <h6 class="text-white mt-3">BOOTSTRAP</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://play-lh.googleusercontent.com/LpgnH_rHqhJzlJ-uWhfMj3w87cu6iWV5m1hr6eos1wmdlqRiF0RsNE1RBmgtsPvyyBI"
-                        class="skill-icon w-50 " />
-                    <h6 class="text-white mt-3">J-QUERY</h6>
+                    <a href="https://jquery.com/" target="_blank">
+                        <img src="https://play-lh.googleusercontent.com/LpgnH_rHqhJzlJ-uWhfMj3w87cu6iWV5m1hr6eos1wmdlqRiF0RsNE1RBmgtsPvyyBI" class="skill-icon w-50" />
+                    </a>
+                    <h6 class="text-white mt-3">JQUERY</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg"
-                        class="skill-icon w-50 " />
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" class="skill-icon w-50" />
+                    </a>
                     <h6 class="text-white mt-3">JAVASCRIPT</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg"
-                        class="skill-icon w-50" />
+                    <a href="https://react.dev/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg" class="skill-icon w-50" />
+                    </a>
                     <h6 class="text-white mt-3">REACT.JS</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg"
-                        class="skill-icon w-50" />
+                    <a href="https://nodejs.org/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg" class="skill-icon w-50" />
+                    </a>
                     <h6 class="text-white mt-3">NODE.JS</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg"
-                        class="skill-icon w-50" />
+                    <a href="https://www.mongodb.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg" class="skill-icon w-50" />
+                    </a>
                     <h6 class="text-white mt-3">MONGODB</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/express/express-original.svg"
-                        class="skill-icon dark-icon w-50" style="filter: brightness(1000) invert(1)" />
+                    <a href="https://expressjs.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/express/express-original.svg" class="skill-icon dark-icon w-50" style="filter: brightness(1000) invert(1)" />
+                    </a>
                     <h6 class="text-white mt-3">EXPRESS.JS</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/socketio/socketio-original.svg"
-                        class="skill-icon dark-icon w-50" style="filter: brightness(1000) invert(1)" />
+                    <a href="https://socket.io/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/socketio/socketio-original.svg" class="skill-icon dark-icon w-50" style="filter: brightness(1000) invert(1)" />
+                    </a>
                     <h6 class="text-white mt-3">SOCKET.IO</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/wordpress/wordpress-plain.svg"
-                        class="skill-icon w-50" />
+                    <a href="https://wordpress.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/wordpress/wordpress-plain.svg" class="skill-icon w-50" />
+                    </a>
                     <h6 class="text-white mt-3">WORDPRESS</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn-icons-png.flaticon.com/512/10701/10701004.png" class="skill-icon w-50" />
+                    <a href="https://moz.com/learn/seo/what-is-seo" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/10701/10701004.png" class="skill-icon w-50" />
+                    </a>
                     <h6 class="text-white mt-3">SEO</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                        class="skill-icon dark-icon small-icon w-50" style="filter: brightness(1000) invert(1)" />
+                    <a href="https://github.com/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="skill-icon dark-icon small-icon w-50" style="filter: brightness(1000) invert(1)" />
+                    </a>
                     <h6 class="text-white mt-3">GITHUB</h6>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vercel/vercel-original.svg"
-                        class="skill-icon dark-icon w-50" style="filter: brightness(1000) invert(1)" />
+                    <a href="https://vercel.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vercel/vercel-original.svg" class="skill-icon dark-icon w-50" style="filter: brightness(1000) invert(1)" />
+                    </a>
                     <h6 class="text-white mt-3">VERCEL</h6>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <!-- Projects -->
     <section>
