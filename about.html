@@ -22,63 +22,63 @@
 
 <body class="bg-black">
     <header>
-        <div class="container d-flex text-white py-4 justify-content-between align-items-center">
+        <div class="container-fluid header-container d-flex text-white py-3 justify-content-between align-items-center">
             <!-- Logo -->
             <div>
-                <h1 class="fs-3 py-1 border px-3 rounded-pill">R M</h1>
+                <h1 class="fs-4 py-1 border px-3 rounded-pill m-0">R M</h1>
             </div>
     
             <!-- Desktop Navigation -->
             <div class="d-none d-lg-block">
-                <ul class="nav nav-underline">
+                <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="/index.html">Home</a>
+                        <a class="nav-link active text-white" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/about.html">About Us</a>
+                        <a class="nav-link text-white" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/service.html">Services</a>
+                        <a class="nav-link text-white" href="service.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/project.html">Project</a>
+                        <a class="nav-link text-white" href="project.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/certificate.html">Certificate</a>
+                        <a class="nav-link text-white" href="certificate.html">Certificate</a>
                     </li>
                 </ul>
             </div>
     
-            <!-- ✅ Offcanvas Toggle Button -->
+            <!-- Offcanvas Toggle Button (Mobile) -->
             <button class="border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas" 
-                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
                 <i class="fa-solid fa-bars text-white fs-4"></i>
             </button>
         </div>
     
-        <!-- ✅ Offcanvas Menu (Fixed) -->
-        <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasExample">
-            <div class="offcanvas-header d-flex justify-content-between align-items-center w-100">
-                <h1 class="fs-3 py-1 border px-3 rounded-pill text-dark">R M</h1>
-                <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas"></button>
+        <!-- Offcanvas Menu (Mobile Navigation) -->
+        <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasMenu">
+            <div class="offcanvas-header">
+                <h1 class="fs-4 py-1 border px-3 rounded-pill text-dark m-0">R M</h1>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
             </div>
     
             <div class="offcanvas-body">
-                <ul class="nav nav-underline flex-column">
+                <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active text-black" href="/index.html">Home</a>
+                        <a class="nav-link active text-black" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="/about.html">About Us</a>
+                        <a class="nav-link text-black" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="/service.html">Services</a>
+                        <a class="nav-link text-black" href="service.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="/project.html">Project</a>
+                        <a class="nav-link text-black" href="project.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="/certificate.html">Certificate</a>
+                        <a class="nav-link text-black" href="certificate.html">Certificate</a>
                     </li>
                 </ul>
             </div>
