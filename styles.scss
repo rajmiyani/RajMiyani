@@ -1,0 +1,97 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$bg-dark: #ca2121;
+$border-color: white;
+$hover-bg: white;
+$hover-text: black;
+$box-shadow-hover: rgba(255, 255, 255, 0.2);
+
+// ✅ Navbar active link styling
+header {
+    .container {
+        .navbar-collapse {
+            .nav-underline .nav-link.active {
+                border-bottom: 3px solid white;
+            }
+        }
+    }
+}
+
+// .container {
+//     flex-direction: column-reverse;
+
+//     @media (min-width: 768px) {
+//         flex-direction: row;
+//     }
+// }
+
+// ✅ Profile image styling
+.profile-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    @media (min-width: 992px) and (max-width: 1399px) {
+        width: 350px;
+        height: 350px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        width: 300px;
+        height: 300px;
+    }
+
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+// services Section
+
+.service-box {
+    background: $bg-dark;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px $box-shadow-hover;
+    }
+}
+
+.service-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-custom {
+    border: 2px solid $border-color;
+    color: $border-color;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: $hover-bg;
+        color: $hover-text;
+    }
+}
+
+// jQuery Animation
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

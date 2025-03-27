@@ -1,141 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Header</title>
+    <title>Services</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        /* Footer General Styling */
-        .footer {
-            background: #121212;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .service-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-text {
+            width: 50%;
+        }
+
+        .service-img {
+            width: 45%;
+            text-align: center;
+        }
+
+        .service-img img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .btn-custom {
+            border: 2px solid;
+            padding: 8px 16px;
+            font-size: 14px;
+            margin: 5px;
+            border-radius: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-orange {
+            border-color: #c44e29;
+            color: #c44e29;
+        }
+
+        .btn-orange:hover {
+            background: #c44e29;
             color: white;
-            padding-bottom: 20px;
         }
-        
-        .footer-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            position: relative;
+
+        .btn-blue {
+            border-color: #0047AB;
+            color: #0047AB;
         }
-        
-        /* Underline Effect for Titles */
-        .footer-title::after {
-            content: "";
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: #00D47B;
-            margin-top: 5px;
-        }
-        
-        /* Footer Links */
-        .footer-links li {
-            margin-bottom: 8px;
-        }
-        
-        .footer-links a {
-            color: #bbb;
-            text-decoration: none;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: #00D47B;
-            transform: translateX(5px);
-        }
-        
-        /* Social Media Icons */
-        .social-icons {
-            margin-top: 10px;
-        }
-        
-        .social-icons a {
+
+        .btn-blue:hover {
+            background: #0047AB;
             color: white;
-            font-size: 20px;
-            margin-right: 15px;
-            transition: transform 0.3s ease, color 0.3s ease;
         }
-        
-        .social-icons a:hover {
-            color: #00D47B;
-            transform: scale(1.2);
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 767px) {
-            .footer-title {
+
+        @media (max-width: 768px) {
+            .service-box {
+                flex-direction: column-reverse;
                 text-align: center;
             }
-            .footer-links {
-                text-align: center;
-            }
-            .social-icons {
-                text-align: center;
+
+            .service-text, .service-img {
+                width: 100%;
             }
         }
-        </style>
+    </style>
 </head>
+
 <body>
-    <footer class="footer bg-dark text-white pt-5">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Navigation -->
-                <div class="col-md-3">
-                    <h5 class="footer-title">Quick Links</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#certificates">Certificates</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Services -->
-                <div class="col-md-3">
-                    <h5 class="footer-title">My Services</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Frontend Design</a></li>
-                        <li><a href="#">MERN Stack Development</a></li>
-                        <li><a href="#">API Integration</a></li>
-                        <li><a href="#">Freelance Projects</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Legal & Terms -->
-                <div class="col-md-3">
-                    <h5 class="footer-title">Legal</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Refund Policy</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Social Media -->
-                <div class="col-md-3">
-                    <h5 class="footer-title">Follow Me</h5>
-                    <div class="social-icons">
-                        <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/yourtwitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="mailto:yourmail@example.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
+
+    <!-- Digital Marketing Section -->
+    <div class="container">
+        <div class="service-box">
+            <div class="service-text">
+                <h2 class="fw-bold">Digital Marketing</h2>
+                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
+                <button class="btn btn-custom btn-orange">SEO</button>
+                <button class="btn btn-custom btn-orange">SMM</button>
+                <button class="btn btn-custom btn-orange">Political Profile</button>
+                <button class="btn btn-custom btn-orange">Mobile App Promotion</button>
             </div>
-    
-            <!-- Copyright -->
-            <div class="text-center mt-4">
-                <p class="mb-0">&copy; 2025 Raj Miyani | All Rights Reserved.</p>
+            <div class="service-img">
+                <img src="https://via.placeholder.com/400x250/FFB199/333333?text=Digital+Marketing" alt="Digital Marketing">
             </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Web & Graphic Designing Section -->
+        <div class="service-box">
+            <div class="service-img">
+                <img src="https://via.placeholder.com/400x250/8AB6F9/333333?text=Web+Graphic+Designing" alt="Web Graphic Designing">
+            </div>
+            <div class="service-text">
+                <h2 class="fw-bold">Web & Graphic Designing</h2>
+                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
+                <button class="btn btn-custom btn-blue">Web Design</button>
+                <button class="btn btn-custom btn-blue">UI & UX Design</button>
+                <button class="btn btn-custom btn-blue">React JS</button>
+                <button class="btn btn-custom btn-blue">Vue JS</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="service-box">
+            <div class="service-text">
+                <h2 class="fw-bold">Digital Marketing</h2>
+                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
+                <button class="btn btn-custom btn-orange">SEO</button>
+                <button class="btn btn-custom btn-orange">SMM</button>
+                <button class="btn btn-custom btn-orange">Political Profile</button>
+                <button class="btn btn-custom btn-orange">Mobile App Promotion</button>
+            </div>
+            <div class="service-img">
+                <img src="https://via.placeholder.com/400x250/FFB199/333333?text=Digital+Marketing" alt="Digital Marketing">
+            </div>
+        </div>
+
+        <!-- Web & Graphic Designing Section -->
+        <div class="service-box">
+            <div class="service-img">
+                <img src="https://via.placeholder.com/400x250/8AB6F9/333333?text=Web+Graphic+Designing" alt="Web Graphic Designing">
+            </div>
+            <div class="service-text">
+                <h2 class="fw-bold">Web & Graphic Designing</h2>
+                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
+                <button class="btn btn-custom btn-blue">Web Design</button>
+                <button class="btn btn-custom btn-blue">UI & UX Design</button>
+                <button class="btn btn-custom btn-blue">React JS</button>
+                <button class="btn btn-custom btn-blue">Vue JS</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="service-box">
+            <div class="service-text">
+                <h2 class="fw-bold">Digital Marketing</h2>
+                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
+                <button class="btn btn-custom btn-orange">SEO</button>
+                <button class="btn btn-custom btn-orange">SMM</button>
+                <button class="btn btn-custom btn-orange">Political Profile</button>
+                <button class="btn btn-custom btn-orange">Mobile App Promotion</button>
+            </div>
+            <div class="service-img">
+                <img src="https://via.placeholder.com/400x250/FFB199/333333?text=Digital+Marketing" alt="Digital Marketing">
+            </div>
+        </div>
+
+        <!-- Web & Graphic Designing Section -->
+        <div class="service-box">
+            <div class="service-img">
+                <img src="https://via.placeholder.com/400x250/8AB6F9/333333?text=Web+Graphic+Designing" alt="Web Graphic Designing">
+            </div>
+            <div class="service-text">
+                <h2 class="fw-bold">Web & Graphic Designing</h2>
+                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
+                <button class="btn btn-custom btn-blue">Web Design</button>
+                <button class="btn btn-custom btn-blue">UI & UX Design</button>
+                <button class="btn btn-custom btn-blue">React JS</button>
+                <button class="btn btn-custom btn-blue">Vue JS</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="service-box">
+            <div class="service-text">
+                <h2 class="fw-bold">Digital Marketing</h2>
+                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
+                <button class="btn btn-custom btn-orange">SEO</button>
+                <button class="btn btn-custom btn-orange">SMM</button>
+                <button class="btn btn-custom btn-orange">Political Profile</button>
+                <button class="btn btn-custom btn-orange">Mobile App Promotion</button>
+            </div>
+            <div class="service-img">
+                <img src="https://via.placeholder.com/400x250/FFB199/333333?text=Digital+Marketing" alt="Digital Marketing">
+            </div>
+        </div>
+
+        <!-- Web & Graphic Designing Section -->
+        <div class="service-box">
+            <div class="service-img">
+                <img src="https://via.placeholder.com/400x250/8AB6F9/333333?text=Web+Graphic+Designing" alt="Web Graphic Designing">
+            </div>
+            <div class="service-text">
+                <h2 class="fw-bold">Web & Graphic Designing</h2>
+                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
+                <button class="btn btn-custom btn-blue">Web Design</button>
+                <button class="btn btn-custom btn-blue">UI & UX Design</button>
+                <button class="btn btn-custom btn-blue">React JS</button>
+                <button class="btn btn-custom btn-blue">Vue JS</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Fade in effect
+            $(".service-box").css("opacity", "0").each(function (index) {
+                $(this).delay(300 * index).animate({ opacity: 1 }, 800);
+            });
+
+            // Button Hover Effect
+            $(".btn-custom").hover(function () {
+                $(this).css("transform", "scale(1.1)");
+            }, function () {
+                $(this).css("transform", "scale(1)");
+            });
+
+            // Smooth Scroll
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+        });
+    </script>
+
 </body>
+
 </html>
