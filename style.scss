@@ -16,14 +16,13 @@ header {
     }
 }
 
-// ✅ Container layout adjustments
-.container {
-    flex-direction: column-reverse;
+// .container {
+//     flex-direction: column-reverse;
 
-    @media (min-width: 768px) {
-        flex-direction: row;
-    }
-}
+//     @media (min-width: 768px) {
+//         flex-direction: row;
+//     }
+// }
 
 // ✅ Profile image styling
 .profile-img {
@@ -47,3 +46,4 @@ header {
         height: 300px;
     }
 }
+
