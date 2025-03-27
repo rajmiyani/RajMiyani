@@ -3,49 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Slider with Round Indicators</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <style>
-        /* Custom styling for round indicators */
-        .carousel-indicators button {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: #bbb;
-            border: none;
-            margin: 0 5px;
-            transition: background-color 0.3s ease;
+        /* Footer General Styling */
+        .footer {
+            background: #121212;
+            color: white;
+            padding-bottom: 20px;
         }
-
-        /* Active indicator color */
-        .carousel-indicators .active {
-            background-color: #00D47B; /* Change color as needed */
+        
+        .footer-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            position: relative;
         }
-    </style>
+        
+        /* Underline Effect for Titles */
+        .footer-title::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #00D47B;
+            margin-top: 5px;
+        }
+        
+        /* Footer Links */
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #00D47B;
+            transform: translateX(5px);
+        }
+        
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 10px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: #00D47B;
+            transform: scale(1.2);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .footer-title {
+                text-align: center;
+            }
+            .footer-links {
+                text-align: center;
+            }
+            .social-icons {
+                text-align: center;
+            }
+        }
+        </style>
 </head>
 <body>
-
-<div id="simpleCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- Round Indicators -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#simpleCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#simpleCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#simpleCarousel" data-bs-slide-to="2"></button>
-    </div>
-
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnh7pgJUtpZWWtHn-eVA3n1DY6D6WpnGOdA&s" class="d-block w-100" alt="Slide 1">
+    <footer class="footer bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Navigation -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Services -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">My Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Frontend Design</a></li>
+                        <li><a href="#">MERN Stack Development</a></li>
+                        <li><a href="#">API Integration</a></li>
+                        <li><a href="#">Freelance Projects</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Legal & Terms -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">Follow Me</h5>
+                    <div class="social-icons">
+                        <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/yourtwitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:yourmail@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2025 Raj Miyani | All Rights Reserved.</p>
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnh7pgJUtpZWWtHn-eVA3n1DY6D6WpnGOdA&s" class="d-block w-100" alt="Slide 2">
-        </div>
-        <div class="carousel-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnh7pgJUtpZWWtHn-eVA3n1DY6D6WpnGOdA&s" class="d-block w-100" alt="Slide 3">
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
