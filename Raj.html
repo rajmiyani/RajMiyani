@@ -1,178 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Portfolio</title>
+    <title>Scroll Animation</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
-    <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- Font Awesome (For Icons, If Needed) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        /* General Styles */
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: black;
             color: white;
         }
 
-        .hero-img {
-            width: 250px;
-            height: 250px;
-            border: 5px solid #00D47B;
-            border-radius: 50%;
+        /* Sections */
+        .section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 1px solid #333;
         }
 
-        .tech-logo {
-            width: 80px;
-            height: auto;
-            margin: 10px;
-        }
-
-        .accordion-button {
-            background-color: #00D47B;
-            color: white;
+        /* When visible, fade-in animation */
+        .section.show {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero text-center text-md-start py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="assets/profile.jpg" alt="Profile Picture" class="img-fluid hero-img">
-                </div>
-                <div class="col-md-6">
-                    <h1 class="fw-bold">Hello, I'm <span class="text-primary">Your Name</span></h1>
-                    <p class="lead">A passionate Web Developer specialized in React, Node.js, and modern web technologies.</p>
-                    <a href="assets/resume.pdf" class="btn btn-primary mt-3">Download Resume</a>
-                </div>
-            </div>
-        </div>
+    <section class="section">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This section will appear when scrolled.</p>
     </section>
 
-    <!-- My Journey (Timeline) -->
-    <section class="timeline py-5 bg-dark text-white">
-        <div class="container">
-            <h2 class="text-center">My Journey</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>2023 - Present</h5>
-                    <p>Senior Web Developer at XYZ Company</p>
-                </div>
-                <div class="col-md-6">
-                    <h5>2020 - 2023</h5>
-                    <p>Full Stack Developer at ABC Tech</p>
-                </div>
-            </div>
-        </div>
+    <section class="section">
+        <h2>About Me</h2>
+        <p>This content appears as you scroll.</p>
     </section>
 
-    <!-- Fun Facts -->
-    <section class="fun-facts text-center py-5">
-        <div class="container">
-            <h2>Fun Facts About Me</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>💻 100+ Projects</h3>
-                    <p>Built websites and applications globally.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>🚀 Coffee Lover</h3>
-                    <p>I drink at least 3 cups daily!</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>🌍 Travel Enthusiast</h3>
-                    <p>Visited 15+ countries.</p>
-                </div>
-            </div>
-        </div>
+    <section class="section">
+        <h2>My Projects</h2>
+        <p>More sections revealed when scrolling.</p>
     </section>
 
-    <!-- Achievements & Certifications -->
-    <section class="achievements bg-dark text-white py-5 text-center">
-        <div class="container">
-            <h2>Achievements & Certifications</h2>
-            <ul class="list-unstyled mt-4">
-                <li>🏆 Best Web Developer Award - 2023</li>
-                <li>📜 Google Certified Web Developer</li>
-                <li>💼 Featured on Tech Magazine</li>
-            </ul>
-        </div>
+    <section class="section">
+        <h2>Contact Me</h2>
+        <p>Let's connect and build something amazing!</p>
     </section>
 
-    <!-- Tech Stack -->
-    <section class="tech-stack py-5 text-center">
-        <div class="container">
-            <h2>Tech Stack & Tools</h2>
-            <div class="row">
-                <div class="col-3">
-                    <img src="assets/html.png" class="tech-logo" alt="HTML">
-                </div>
-                <div class="col-3">
-                    <img src="assets/css.png" class="tech-logo" alt="CSS">
-                </div>
-                <div class="col-3">
-                    <img src="assets/js.png" class="tech-logo" alt="JavaScript">
-                </div>
-                <div class="col-3">
-                    <img src="assets/react.png" class="tech-logo" alt="React">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quote -->
-    <section class="quote bg-primary text-white text-center py-5">
-        <div class="container">
-            <h2>“Code is like humor. When you have to explain it, it’s bad.”</h2>
-            <p>- Cory House</p>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq py-5">
-        <div class="container">
-            <h2 class="text-center">Frequently Asked Questions</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                            What technologies do you specialize in?
-                        </button>
-                    </h2>
-                    <div id="faq1" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            I specialize in React, Node.js, JavaScript, and modern web technologies.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- jQuery & Bootstrap Bundle -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Slick Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $('.tech-logo').on('mouseenter', function() {
-                $(this).css('transform', 'scale(1.1)');
-            });
-
-            $('.tech-logo').on('mouseleave', function() {
-                $(this).css('transform', 'scale(1)');
-            });
-        });
-    </script>
+    
 
 </body>
+
 </html>

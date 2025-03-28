@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raj Miyani</title>
     <link rel="shortcut icon" href="../assets/IMG-20241230-WA0137.jpg" type="image/x-icon">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./links/bootstrap.min.css">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./links/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Custom CSS (Make sure SCSS is compiled) -->
-    <link rel="stylesheet" href="./styles.css">
+
+        <link rel="stylesheet" href="./styles.css">
 
     <!-- jQuery & Slick -->
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+
+    <style>
+        
+    </style>
 </head>
 
 
@@ -32,7 +35,7 @@
             <div>
                 <h1 class="fs-4 py-1 border px-3 rounded-pill m-0">R M</h1>
             </div>
-    
+
             <!-- Desktop Navigation -->
             <div class="d-none d-lg-block">
                 <ul class="nav">
@@ -53,21 +56,21 @@
                     </li>
                 </ul>
             </div>
-    
+
             <!-- Offcanvas Toggle Button (Mobile) -->
-            <button class="border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas" 
+            <button class="border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
                 <i class="fa-solid fa-bars text-white fs-4"></i>
             </button>
         </div>
-    
+
         <!-- Offcanvas Menu (Mobile Navigation) -->
         <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasMenu">
             <div class="offcanvas-header">
                 <h1 class="fs-4 py-1 border px-3 rounded-pill text-dark m-0">R M</h1>
                 <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
             </div>
-    
+
             <div class="offcanvas-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -91,7 +94,7 @@
     </header>
 
     <!-- intro -->
-    <section class="my-lg-5 py-lg-5" id="aboutme">
+    <section class="section my-lg-5 py-lg-5" id="aboutme">
         <div class="container d-flex flex-column flex-lg-row align-items-center">
             <div class="col-lg-7 px-3 py-5 text-light about-content text-center text-lg-start">
                 <h1>Hello, It's Me</h1>
@@ -120,14 +123,15 @@
                 </div>
             </div>
             <div class="col-lg-5 col-12 px-lg-5 px-3 d-flex justify-content-center">
-                <img src="/assets/IMG-20241230-WA0137.jpg" class="profile-img img-fluid" alt="Raj Miyani" />
+                <img src="/assets/IMG-20241230-WA0137.jpg" class="profile-img img-fluid rounded-circle"
+                    alt="Raj Miyani" />
             </div>
         </div>
     </section>
 
     <!-- about -->
 
-    <section class="my-0 position-relative">
+    <section class="section my-0 position-relative">
         <div class="container h-100 dja" id="about">
             <div class="container">
                 <div class="row align-items-center">
@@ -165,7 +169,7 @@
 
 
     <!-- services -->
-    <section class="my-lg-5 pt-1 text-white services">
+    <section class="section my-lg-5 pt-1 text-white services">
         <h1 class="z2 m-0 my-5 text-center fs-title-small" style="font-size: 64px">SERVICES</h1>
 
         <div class="container">
@@ -249,7 +253,7 @@
 
     <!-- skills -->
 
-    <section class="skills-section">
+    <section class="section skills-section">
         <h1 class="text-center my-5 text-white" style="font-size: 64px;">Skills</h1>
         <div class="container">
             <div class="row justify-content-center">
@@ -362,7 +366,7 @@
     </section>
 
     <!-- Projects -->
-    <section>
+    <section class="section">
         <h1 class="m-0 mt-0 fs-title-small pt-5 px-3 px-lg-0 text-white d-flex justify-content-center"
             style="font-size: 64px;">
             MY WORK'S
@@ -466,7 +470,8 @@
                             <h6 class="card-title">Student Fees Panel <br> (Node.js)</h6>
                             <p class="card-text mb-0">Email: raj@g.c</p>
                             <p class="card-text">Password: 12</p>
-                            <a href="https://student-fees-pannel-1.onrender.com" class="btn rounded-pill text-white border-0"
+                            <a href="https://student-fees-pannel-1.onrender.com"
+                                class="btn rounded-pill text-white border-0"
                                 style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);">View
                                 Project <i class="fa-solid fa-arrow-right ms-2"></i></a>
                         </div>
@@ -492,7 +497,7 @@
     </section>
 
     <!-- certificates -->
-    <section class="my-5 text-white">
+    <section class="section my-5 text-white">
         <h1 class="z2 m-0 my-5 text-center fs-title-small" style="font-size: 64px;">
             CERTIFICATES
         </h1>
@@ -550,7 +555,7 @@
     <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row gy-4">
-    
+
                 <!-- Social Media -->
                 <div class="col-md-3 text-center text-md-start">
                     <div class="w-auto">
@@ -560,15 +565,16 @@
                     <!-- Content -->
                     <div class="mt-3">
                         I am a Web Developer & WordPress Specialist skilled in creating dynamic, user-friendly, and
-                        scalable websites using the latest technologies. 
+                        scalable websites using the latest technologies.
                     </div>
-    
+
                     <!-- Social Media Links -->
                     <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
                         <a href="https://github.com/rajmiyani" target="_blank" class="text-white fs-4">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/raj-miyani-40a4812b3/" target="_blank" class="text-white fs-4">
+                        <a href="https://www.linkedin.com/in/raj-miyani-40a4812b3/" target="_blank"
+                            class="text-white fs-4">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="mailto:rajmiyani06@gmail.com?subject=Hello%20there" class="text-white fs-4">
@@ -579,63 +585,77 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <!-- Quick Explore -->
                 <div class="col-md-3">
                     <h5 class="fw-bold border-bottom border-2 pb-2 d-inline-block">Quick Explore</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Home</a></li>
-                        <li><a href="about.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>About Us</a></li>
-                        <li><a href="project.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Projects</a></li>
-                        <li><a href="service.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Services</a></li>
-                        <li><a href="certificate.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Certificates</a></li>
+                        <li><a href="index.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>About Us</a></li>
+                        <li><a href="project.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Projects</a></li>
+                        <li><a href="service.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Services</a></li>
+                        <li><a href="certificate.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Certificates</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- My Services -->
                 <div class="col-md-3">
                     <h5 class="fw-bold border-bottom border-2 pb-2 d-inline-block">My Services</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Web Development</a></li>
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Frontend Development</a></li>
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Backend Development</a></li>
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>WordPress Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Web Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Frontend Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Backend Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>WordPress Development</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Connect With Us -->
                 <div class="col-md-3">
                     <h5 class="fw-bold border-bottom border-2 pb-2 d-inline-block">Connect With Us</h5>
                     <p class="mt-3">Feel free to reach out to me through social media or email.</p>
-    
+
                     <!-- Contact Info -->
                     <div class="mt-3">
                         <p class="m-0"><i class="fas fa-phone-alt me-1"></i>+91 81283 55328</p>
                         <p class="mt-1"><i class="fas fa-envelope me-1"></i>rajmiyani06@gmail.com</p>
                     </div>
-    
+
                     <!-- Email Subscription -->
                     <div class="input-group mt-3">
-                        <input type="email" class="form-control shadow-none" placeholder="Enter your email" aria-label="Email" required>
-                        <button class="btn btn-primary" style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);" type="submit">Submit</button>
+                        <input type="email" class="form-control shadow-none" placeholder="Enter your email"
+                            aria-label="Email" required>
+                        <button class="btn btn-primary"
+                            style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);"
+                            type="submit">Submit</button>
                     </div>
                 </div>
-    
+
             </div>
-    
+
             <!-- Copyright -->
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 border-top pt-3">
                 <p class="mb-0 text-center text-md-start">&copy; 2025 | All Rights Reserved By Raj Miyani.</p>
                 <p class="mb-0">
-                    <a href="/terms-and-conditions.html" class="text-white text-decoration-none">Terms and Conditions</a>
+                    <a href="/terms-and-conditions.html" class="text-white text-decoration-none">Terms and
+                        Conditions</a>
                 </p>
             </div>
-    
+
         </div>
     </footer>
-    
+
 
     <!-- Bootstrap JS (for navbar toggling) -->
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
