@@ -72,13 +72,19 @@
         }
 
         @media (max-width: 768px) {
-            .service-box {
-                flex-direction: column-reverse;
-                text-align: center;
+            .row {
+                display: flex !important;
+                flex-direction: column-reverse !important;
             }
 
-            .service-text, .service-img {
-                width: 100%;
+            .row>div:first-child {
+                order: 2;
+                /* Image comes first */
+            }
+
+            .row>div:last-child {
+                order: 1;
+                /* Content comes after */
             }
         }
     </style>
@@ -88,118 +94,27 @@
 
     <!-- Digital Marketing Section -->
     <div class="container">
-        <div class="service-box">
-            <div class="service-text">
-                <h2 class="fw-bold">Digital Marketing</h2>
-                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
-                <button class="btn btn-custom btn-orange">SEO</button>
-                <button class="btn btn-custom btn-orange">SMM</button>
-                <button class="btn btn-custom btn-orange">Political Profile</button>
-                <button class="btn btn-custom btn-orange">Mobile App Promotion</button>
+        <div class="row align-items-center web-dev">
+            <div class="col-12 col-md-6 text-center">
+                <img src="assets/Web-Development.jpg" alt="Web Development" class="service-img w-75">
             </div>
-            <div class="service-img">
-                <img src="https://via.placeholder.com/400x250/FFB199/333333?text=Digital+Marketing" alt="Digital Marketing">
+            <div class="col-12 col-md-6 mt-3">
+                <h2 class="fw-bold">WEB DEVELOPMENT</h2>
+                <p>...</p>
             </div>
         </div>
+
 
         <!-- Web & Graphic Designing Section -->
         <div class="service-box">
             <div class="service-img">
-                <img src="https://via.placeholder.com/400x250/8AB6F9/333333?text=Web+Graphic+Designing" alt="Web Graphic Designing">
+                <img src="https://via.placeholder.com/400x250/8AB6F9/333333?text=Web+Graphic+Designing"
+                    alt="Web Graphic Designing">
             </div>
             <div class="service-text">
                 <h2 class="fw-bold">Web & Graphic Designing</h2>
-                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
-                <button class="btn btn-custom btn-blue">Web Design</button>
-                <button class="btn btn-custom btn-blue">UI & UX Design</button>
-                <button class="btn btn-custom btn-blue">React JS</button>
-                <button class="btn btn-custom btn-blue">Vue JS</button>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="service-box">
-            <div class="service-text">
-                <h2 class="fw-bold">Digital Marketing</h2>
-                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
-                <button class="btn btn-custom btn-orange">SEO</button>
-                <button class="btn btn-custom btn-orange">SMM</button>
-                <button class="btn btn-custom btn-orange">Political Profile</button>
-                <button class="btn btn-custom btn-orange">Mobile App Promotion</button>
-            </div>
-            <div class="service-img">
-                <img src="https://via.placeholder.com/400x250/FFB199/333333?text=Digital+Marketing" alt="Digital Marketing">
-            </div>
-        </div>
-
-        <!-- Web & Graphic Designing Section -->
-        <div class="service-box">
-            <div class="service-img">
-                <img src="https://via.placeholder.com/400x250/8AB6F9/333333?text=Web+Graphic+Designing" alt="Web Graphic Designing">
-            </div>
-            <div class="service-text">
-                <h2 class="fw-bold">Web & Graphic Designing</h2>
-                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
-                <button class="btn btn-custom btn-blue">Web Design</button>
-                <button class="btn btn-custom btn-blue">UI & UX Design</button>
-                <button class="btn btn-custom btn-blue">React JS</button>
-                <button class="btn btn-custom btn-blue">Vue JS</button>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="service-box">
-            <div class="service-text">
-                <h2 class="fw-bold">Digital Marketing</h2>
-                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
-                <button class="btn btn-custom btn-orange">SEO</button>
-                <button class="btn btn-custom btn-orange">SMM</button>
-                <button class="btn btn-custom btn-orange">Political Profile</button>
-                <button class="btn btn-custom btn-orange">Mobile App Promotion</button>
-            </div>
-            <div class="service-img">
-                <img src="https://via.placeholder.com/400x250/FFB199/333333?text=Digital+Marketing" alt="Digital Marketing">
-            </div>
-        </div>
-
-        <!-- Web & Graphic Designing Section -->
-        <div class="service-box">
-            <div class="service-img">
-                <img src="https://via.placeholder.com/400x250/8AB6F9/333333?text=Web+Graphic+Designing" alt="Web Graphic Designing">
-            </div>
-            <div class="service-text">
-                <h2 class="fw-bold">Web & Graphic Designing</h2>
-                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
-                <button class="btn btn-custom btn-blue">Web Design</button>
-                <button class="btn btn-custom btn-blue">UI & UX Design</button>
-                <button class="btn btn-custom btn-blue">React JS</button>
-                <button class="btn btn-custom btn-blue">Vue JS</button>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="service-box">
-            <div class="service-text">
-                <h2 class="fw-bold">Digital Marketing</h2>
-                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
-                <button class="btn btn-custom btn-orange">SEO</button>
-                <button class="btn btn-custom btn-orange">SMM</button>
-                <button class="btn btn-custom btn-orange">Political Profile</button>
-                <button class="btn btn-custom btn-orange">Mobile App Promotion</button>
-            </div>
-            <div class="service-img">
-                <img src="https://via.placeholder.com/400x250/FFB199/333333?text=Digital+Marketing" alt="Digital Marketing">
-            </div>
-        </div>
-
-        <!-- Web & Graphic Designing Section -->
-        <div class="service-box">
-            <div class="service-img">
-                <img src="https://via.placeholder.com/400x250/8AB6F9/333333?text=Web+Graphic+Designing" alt="Web Graphic Designing">
-            </div>
-            <div class="service-text">
-                <h2 class="fw-bold">Web & Graphic Designing</h2>
-                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart applications with the ability to analyze data are what Python is all about.</p>
+                <p>Need to build a smart web service. Cloud computing-based solutions are built on Python. Smart
+                    applications with the ability to analyze data are what Python is all about.</p>
                 <button class="btn btn-custom btn-blue">Web Design</button>
                 <button class="btn btn-custom btn-blue">UI & UX Design</button>
                 <button class="btn btn-custom btn-blue">React JS</button>
