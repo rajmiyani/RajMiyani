@@ -65,7 +65,7 @@ header .container .navbar-collapse .nav-underline .nav-link.active {
 
 .btn-custom:hover {
     background: white;
-    color: black;
+    color: #000000;
 }
 
 /* jQuery Animation */
