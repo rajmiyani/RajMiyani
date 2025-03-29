@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -6,6 +7,16 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+>>>>>>> e3fc9fcb11139057457c29921efbc25c8dfd5f3f
 
 <url>
   <loc>https://rajmiyani.vercel.app/</loc>
@@ -181,7 +192,13 @@
   <loc>https://rajmiyani.vercel.app/travel-agency/contact.html</loc>
   <lastmod>2025-03-29T10:14:41+00:00</lastmod>
   <priority>0.64</priority>
+<<<<<<< HEAD
 </url>
 
 
+=======
+</url>
+
+
+>>>>>>> e3fc9fcb11139057457c29921efbc25c8dfd5f3f
 </urlset>
