@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -6,17 +5,6 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
->>>>>>> e3fc9fcb11139057457c29921efbc25c8dfd5f3f
 
 <url>
   <loc>https://rajmiyani.vercel.app/</loc>
@@ -64,141 +52,9 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rajmiyani.vercel.app/knight/index.html</loc>
-  <lastmod>2025-03-29T10:14:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/travel-agency/index.html</loc>
-  <lastmod>2025-03-29T10:14:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/Calculator/index.html</loc>
-  <lastmod>2025-03-29T10:14:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/Dozecafe/html/about.html</loc>
-  <lastmod>2025-03-29T10:14:37+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/Dozecafe/html/coffees.html</loc>
-  <lastmod>2025-03-29T10:14:37+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/Dozecafe/html/blog.html</loc>
-  <lastmod>2025-03-29T10:14:37+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/Dozecafe/html/contact.html</loc>
-  <lastmod>2025-03-29T10:14:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/about.html</loc>
-  <lastmod>2025-03-29T10:14:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/service.html</loc>
-  <lastmod>2025-03-29T10:14:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/blog.html</loc>
-  <lastmod>2025-03-29T10:14:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/detail.html</loc>
-  <lastmod>2025-03-29T10:14:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/price.html</loc>
-  <lastmod>2025-03-29T10:14:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/feature.html</loc>
-  <lastmod>2025-03-29T10:14:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/team.html</loc>
-  <lastmod>2025-03-29T10:14:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/testimonial.html</loc>
-  <lastmod>2025-03-29T10:14:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/quote.html</loc>
-  <lastmod>2025-03-29T10:14:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/startup-website/contact.html</loc>
-  <lastmod>2025-03-29T10:14:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/travel-agency/about.html</loc>
-  <lastmod>2025-03-29T10:14:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/travel-agency/service.html</loc>
-  <lastmod>2025-03-29T10:14:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/travel-agency/package.html</loc>
-  <lastmod>2025-03-29T10:14:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/travel-agency/destination.html</loc>
-  <lastmod>2025-03-29T10:14:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/travel-agency/booking.html</loc>
-  <lastmod>2025-03-29T10:14:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/travel-agency/team.html</loc>
-  <lastmod>2025-03-29T10:14:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/travel-agency/testimonial.html</loc>
-  <lastmod>2025-03-29T10:14:41+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajmiyani.vercel.app/travel-agency/404.html</loc>
-  <lastmod>2025-03-29T10:14:41+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://rajmiyani.vercel.app/travel-agency/contact.html</loc>
   <lastmod>2025-03-29T10:14:41+00:00</lastmod>
   <priority>0.64</priority>
-<<<<<<< HEAD
 </url>
 
-
-=======
-</url>
-
-
->>>>>>> e3fc9fcb11139057457c29921efbc25c8dfd5f3f
 </urlset>
