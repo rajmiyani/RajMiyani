@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Miyani</title>
+    <link rel="shortcut icon" href="../assets/IMG-20241230-WA0137.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="stylesheet" href="./links/bootstrap.min.css" />
+    <link rel="stylesheet" href="./links/all.min.css" />
+    <link rel="stylesheet" href="./links/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .btn-custom {
+            font-weight: bold;
+            border: 2px solid;
+        }
+
+        /* Adjust buttons based on the section image */
+        .web-dev .btn-custom {
+            border-color: #0088CC;
+            color: #0088CC;
+        }
+
+        /* MongoDB */
+        .frontend .btn-custom {
+            border-color: #0F172A;
+            color: #1E3A8A;
+        }
+
+        /* JavaScript */
+        .backend .btn-custom {
+            border-color: #3D2C8D;
+            color: #3D2C8D;
+        }
+
+        /* Node.js */
+        .wordpress .btn-custom {
+            border-color: #6D28D9;
+            color: #6D28D9;
+        }
+
+        /* WordPress */
+
+        /* Responsive: Show image first on small screens */
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+
+    <!-- Header -->
+
+    <header>
+        <div class="container header-container d-flex text-white py-3 justify-content-between align-items-center">
+            <!-- Logo -->
+            <div>
+                <h1 class="fs-4 py-1 border px-3 rounded-pill m-0">R M</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="d-none d-lg-block">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="certificate.html">Certificate</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Offcanvas Toggle Button (Mobile) -->
+            <button class="border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                <i class="fa-solid fa-bars text-white fs-4"></i>
+            </button>
+        </div>
+
+        <!-- Offcanvas Menu (Mobile Navigation) -->
+        <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasMenu">
+            <div class="offcanvas-header">
+                <h1 class="fs-4 py-1 border px-3 rounded-pill text-dark m-0">R M</h1>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="certificate.html">Certificate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- services -->
+
+    <section class="section my-0 pt-1 text-white services">
+        <h1 class="z2 m-0 my-5 text-center fs-title-small" style="font-size: 70px">SERVICES</h1>
+
+        <div class="container">
+            <!-- Grid Layout for Large Screens (Hidden on Small Screens) -->
+            <div class="row d-none d-lg-flex">
+                <div class="col-12 col-sm-6 col-lg-3 p-2">
+                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
+                        <img class="zoom-img" width="100%" src="assets/Web-Development.jpg" alt="Web Development">
+                        <h6 class="m-0 mt-2">1. Web Development</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-2">
+                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
+                        <img width="100%" src="assets/Frontend.jpg" alt="Frontend Development">
+                        <h6 class="m-0 mt-2">2. Frontend Development</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-2">
+                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
+                        <img width="100%" src="assets/Backend.jpeg" alt="Backend Development">
+                        <h6 class="m-0 mt-2">3. Backend Development</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-2">
+                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
+                        <img width="100%" src="assets/Wordpress.png" alt="Wordpress Development">
+                        <h6 class="m-0 mt-2">4. Wordpress Development</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel for Small Screens (Hidden on Large Screens) -->
+            <!-- Carousel Container -->
+            <div id="servicesCarousel" class="carousel slide d-block d-lg-none" data-bs-ride="carousel"
+                style="position: relative;">
+
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="rounded-3 text-center p-3 mx-auto"
+                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
+                            <img class="zoom-img" width="100%" src="assets/Web-Development.jpg" alt="Web Development">
+                            <h6 class="m-0 mt-2">1. Web Development</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="rounded-3 text-center p-3 mx-auto"
+                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
+                            <img width="100%" src="assets/Frontend.jpg" alt="Frontend Development">
+                            <h6 class="m-0 mt-2">2. Frontend Development</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="rounded-3 text-center p-3 mx-auto"
+                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
+                            <img width="100%" src="assets/Backend.jpeg" alt="Backend Development">
+                            <h6 class="m-0 mt-2">3. Backend Development</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="rounded-3 text-center p-3 mx-auto"
+                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
+                            <img width="100%" src="assets/Wordpress.png" alt="Wordpress Development">
+                            <h6 class="m-0 mt-2">4. Wordpress Development</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Positioned Indicators -->
+                <div class="carousel-indicators" style="bottom: -50px;">
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section container py-5">
+        <!-- Web Development -->
+        <div class="row align-items-center mb-5 fade-in web-dev text-white text-center text-md-start">
+            <div class="col-12 col-md-6 text-center mt-3 mt-md-0">
+                <img src="assets/Web-Development.jpg" alt="Web Development" class="service-img w-75 w-sm-100">
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+                <h2 class="fw-bold">WEB DEVELOPMENT</h2>
+                <p>
+                    Modern cloud-based solutions require intelligent web applications capable of analyzing data and
+                    delivering real-time insights. MERN Stack (MongoDB, Express.js, React.js, Node.js) is the perfect
+                    choice for companies looking to build scalable and data-driven web services.
+                </p>
+                <div class="d-flex gap-3 flex-wrap justify-content-center">
+                    <button class="btn btn-custom web-btn">MongoDB</button>
+                    <button class="btn btn-custom web-btn">Express.js</button>
+                    <button class="btn btn-custom web-btn">React.js</button>
+                    <button class="btn btn-custom web-btn">Node.js</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frontend Development -->
+        <div
+            class="row align-items-center mb-5 fade-in flex-md-row-reverse frontend text-white text-center text-md-start">
+            <div class="col-12 col-md-6 text-center mt-3 mt-md-0">
+                <img src="assets/Frontend.jpg" alt="Frontend Development" class="service-img w-75 w-sm-100">
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+                <h2 class="fw-bold">FRONTEND DEVELOPMENT</h2>
+                <p>
+                    Modern cloud-based solutions require intelligent user interfaces capable of delivering seamless
+                    user experiences and real-time interactions. Frontend technologies like React.js, JavaScript, and
+                    CSS frameworks are the perfect choice for companies looking to build highly responsive and engaging
+                    web applications.
+                </p>
+                <div class="d-flex gap-3 flex-wrap justify-content-center">
+                    <button class="btn btn-custom frontend-btn">React JS</button>
+                    <button class="btn btn-custom frontend-btn">JavaScript</button>
+                    <button class="btn btn-custom frontend-btn">Tailwind CSS</button>
+                    <button class="btn btn-custom frontend-btn">Bootstrap</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="row align-items-center mb-5 fade-in backend text-white text-center text-md-start">
+            <div class="col-12 col-md-6 text-center mt-3 mt-md-0">
+                <img src="assets/Backend.jpeg" alt="Backend Development" class="service-img w-75 w-sm-100">
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+                <h2 class="fw-bold">BACKEND DEVELOPMENT</h2>
+                <p>
+                    Modern cloud-based solutions require powerful backend systems capable of handling data processing,
+                    authentication, and seamless API integrations. MERN Stack (MongoDB, Express.js, Node.js) and other
+                    backend technologies are the perfect choice for companies looking to build robust and scalable web
+                    services.
+                </p>
+                <div class="d-flex gap-3 flex-wrap justify-content-center">
+                    <button class="btn btn-custom backend-btn">Node.js</button>
+                    <button class="btn btn-custom backend-btn">MongoDB</button>
+                    <button class="btn btn-custom backend-btn">Express.js</button>
+                    <button class="btn btn-custom backend-btn">Postman</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- WordPress Development -->
+        <div
+            class="row align-items-center mb-5 fade-in flex-md-row-reverse wordpress text-white text-center text-md-start">
+            <div class="col-12 col-md-6 text-center mt-3 mt-md-0">
+                <img src="assets/Wordpress.png" alt="WordPress Development" class="service-img w-75 w-sm-100">
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+                <h2 class="fw-bold">WORDPRESS DEVELOPMENT</h2>
+                <p>
+                    Modern cloud-based solutions require flexible and customizable content management systems that
+                    provide businesses with complete control over their digital presence. WordPress, along with custom
+                    themes, plugins, and WooCommerce integration, is the perfect choice for companies looking to build
+                    feature-rich and scalable websites.
+                </p>
+                <div class="d-flex gap-3 flex-wrap justify-content-center">
+                    <button class="btn btn-custom wordpress-btn">WordPress Theme</button>
+                    <button class="btn btn-custom wordpress-btn">Plugin Dev & Customization</button>
+                    <button class="btn btn-custom wordpress-btn">WooCommerce Development</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4">
+    
+                <!-- Social Media -->
+                <div class="col-md-3 text-center text-md-start">
+                    <div class="w-auto">
+                        <h1 class="fs-4 py-1 px-3 border border-2 rounded-pill m-0 d-inline-block text-center">R M</h1>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="mt-3">
+                        I am a Web Developer & WordPress Specialist skilled in creating dynamic, user-friendly, and
+                        scalable websites using the latest technologies. 
+                    </div>
+    
+                    <!-- Social Media Links -->
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
+                        <a href="https://github.com/rajmiyani" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/raj-miyani-40a4812b3/" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:rajmiyani06@gmail.com?subject=Hello%20there" class="text-white fs-4">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/918128355328" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Quick Explore -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold border-bottom border-2 pb-2 d-inline-block">Quick Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>About Us</a></li>
+                        <li><a href="project.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Projects</a></li>
+                        <li><a href="service.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Services</a></li>
+                        <li><a href="certificate.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Certificates</a></li>
+                    </ul>
+                </div>
+    
+                <!-- My Services -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold border-bottom border-2 pb-2 d-inline-block">My Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Web Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Frontend Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Backend Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>WordPress Development</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Connect With Us -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold border-bottom border-2 pb-2 d-inline-block">Connect With Us</h5>
+                    <p class="mt-3">Feel free to reach out to me through social media or email.</p>
+    
+                    <!-- Contact Info -->
+                    <div class="mt-3">
+                        <p class="m-0"><i class="fas fa-phone-alt me-1"></i>+91 81283 55328</p>
+                        <p class="mt-1"><i class="fas fa-envelope me-1"></i>rajmiyani06@gmail.com</p>
+                    </div>
+    
+                    <!-- Email Subscription -->
+                    <div class="input-group mt-3">
+                        <input type="email" class="form-control shadow-none" placeholder="Enter your email" aria-label="Email" required>
+                        <button class="btn btn-primary" style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);" type="submit">Submit</button>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- Copyright -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 border-top pt-3">
+                <p class="mb-0 text-center text-md-start">&copy; 2025 | All Rights Reserved By Raj Miyani.</p>
+                <p class="mb-0">
+                    <a href="/terms-and-conditions.html" class="text-white text-decoration-none">Terms and Conditions</a>
+                </p>
+            </div>
+    
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (for navbar toggling) -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

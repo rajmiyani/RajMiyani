@@ -1,0 +1,99 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header .container .navbar-collapse .nav-underline .nav-link.active {
+    border-bottom: 3px solid white;
+}
+
+.profile-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-img {
+    width: 500px;
+    /* Adjust as needed */
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .profile-img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* Services Section */
+.service-box {
+    background: #ca2121;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.service-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-custom {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: white;
+    color: #000000;
+}
+
+/* jQuery Animation */
+/* .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button {
+    border: 1px solid white;
+    border-radius: 10%;
+    color: white;
+} */
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When visible, fade-in animation */
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
