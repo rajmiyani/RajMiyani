@@ -3,45 +3,55 @@
 
 <head>
     <!-- Basic Page Settings -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Page Title & Favicon -->
-    <title>Raj Miyani</title>
-    <link rel="shortcut icon" href="/assets/IMG-20241230-WA0137.jpg" type="image/x-icon">
+    <title>Raj Miyani | MERN Stack Developer</title>
+    <meta name="title" content="Raj Miyani | MERN Stack Developer" />
+    <meta name="description"
+        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
+    <link rel="shortcut icon" href="/assets/IMG-20241230-WA0137.jpg" type="image/x-icon" />
 
-    <!-- SEO Meta Tags -->
-    <meta property="og:description"
-        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. My skill set includes backend development, database management, and seamless deployment strategies. Passionate about crafting scalable, user-friendly solutions, I specialize in optimizing server performance, API integrations, and full-stack application development. My goal is to leverage modern technologies to create innovative, efficient, and engaging digital experiences." />
-    <meta property="og:site_name" content="Raj Miyani Portfolio" />
+    <!-- Keywords for SEO -->
     <meta name="keywords"
-        content="MERN-stack developer, Node.js developer, React.js developer, Full-stack web developer, Web application development, Scalable web applications, Backend development with Node.js, Frontend development with React.js, Database management (MongoDB, SQL), API development and integration, JavaScript web development, Modern web technologies, Best MERN-stack developer portfolio, Hire a full-stack web developer online, Scalable and dynamic web applications development, Expert in React.js and Node.js for web development, Web application optimization and deployment, Best Developer in surat, Raj Miyani, Raj Miyani Portfolio, How to build a Professional Website, Best Development Technologies.">
-    <meta name="author" content="Raj Miyani">
+        content="MERN-stack developer, Node.js developer, React.js developer, Full-stack web developer, Web application development, Scalable web applications, Backend development, Frontend development, API development, MongoDB, JavaScript, Raj Miyani Portfolio" />
+    <meta name="author" content="Raj Miyani" />
 
-    <!-- Open Graph (Social Media) Meta Tags -->
-    <meta property="og:title" content="Raj Miyani - MERN Stack Developer" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rajmiyani.vercel.app" />
-    <meta property="og:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Raj Miyani | MERN Stack Developer" />
     <meta property="og:description"
-        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. My skill set includes backend development, database management, and seamless deployment strategies. Passionate about crafting scalable, user-friendly solutions, I specialize in optimizing server performance, API integrations, and full-stack application development. My goal is to leverage modern technologies to create innovative, efficient, and engaging digital experiences." />
+        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
+    <meta property="og:url" content="https://rajmiyani.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg"  />
     <meta property="og:site_name" content="Raj Miyani Portfolio" />
 
-    <!-- Google Site Verification (For SEO & Ownership) -->
+    <!-- Twitter Card (optional but helpful) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Raj Miyani | MERN Stack Developer" />
+    <meta name="twitter:description"
+        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
+    <meta name="twitter:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+
+    <!-- Google Site Verification (optional) -->
     <meta name="google-site-verification" content="XKrqZN-TEZh0BxuW1CURxrko3N3IE6380h8RhNA1DCk" />
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="/links/bootstrap.min.css">
-    <link rel="stylesheet" href="/links/fontawesome.min.css">
+    <link rel="stylesheet" href="/links/bootstrap.min.css" />
+    <link rel="stylesheet" href="/links/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css" />
 
     <!-- jQuery & Slick Carousel -->
     <script src="/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+
+    <!-- Spline Viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"></script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEY6LGD6EX"></script>
@@ -53,19 +63,18 @@
     </script>
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start': new Date().getTime(), event: 'gtm.js'
-            });
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
             var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M8PTQBJ8');</script>
-
+        })(window, document, 'script', 'dataLayer', 'GTM-M8PTQBJ8');
+    </script>
 </head>
-
 
 <body class="bg-black">
 
@@ -192,6 +201,10 @@
                         <img src="assets/AboutUs.webp" alt="About Me" class="rounded-circle img-fluid"
                             style="max-width: 500px; box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);">
                     </div>
+                    <!-- <div class="col-lg-6 d-none d-lg-block">
+                        <spline-viewer
+                            url="https://my.spline.design/untitled-11eed0abbde64ad5ab3974952e0f305e/"></spline-viewer>
+                    </div> -->
 
                     <!-- Right Content (Remains in container) -->
                     <div class="col-lg-6 col-12 text-white">
@@ -605,7 +618,7 @@
     <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row gy-4">
-    
+
                 <!-- Social Media -->
                 <div class="col-md-3 text-center text-md-start">
                     <div class="w-auto">
@@ -615,15 +628,16 @@
                     <!-- Content -->
                     <div class="mt-3">
                         I am a Web Developer & WordPress Specialist skilled in creating dynamic, user-friendly, and
-                        scalable websites using the latest technologies. 
+                        scalable websites using the latest technologies.
                     </div>
-    
+
                     <!-- Social Media Links -->
                     <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
                         <a href="https://github.com/rajmiyani" target="_blank" class="text-white fs-4">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/raj-miyani-40a4812b3/" target="_blank" class="text-white fs-4">
+                        <a href="https://www.linkedin.com/in/raj-miyani-40a4812b3/" target="_blank"
+                            class="text-white fs-4">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="mailto:rajmiyani06@gmail.com?subject=Hello%20there" class="text-white fs-4">
@@ -634,58 +648,71 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <!-- Quick Explore -->
                 <div class="col-md-3">
                     <h5 class="fw-bold border-bottom border-2 pb-2 d-inline-block">Quick Explore</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Home</a></li>
-                        <li><a href="about.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>About Us</a></li>
-                        <li><a href="project.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Projects</a></li>
-                        <li><a href="service.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Services</a></li>
-                        <li><a href="certificate.html" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Certificates</a></li>
+                        <li><a href="index.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>About Us</a></li>
+                        <li><a href="project.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Projects</a></li>
+                        <li><a href="service.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Services</a></li>
+                        <li><a href="certificate.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Certificates</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- My Services -->
                 <div class="col-md-3">
                     <h5 class="fw-bold border-bottom border-2 pb-2 d-inline-block">My Services</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Web Development</a></li>
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Frontend Development</a></li>
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>Backend Development</a></li>
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1"><span class="me-2">•</span>WordPress Development</a></li>
+                        <li><a href="service.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Web Development</a></li>
+                        <li><a href="service.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Frontend Development</a></li>
+                        <li><a href="service.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>Backend Development</a></li>
+                        <li><a href="service.html" class="text-white text-decoration-none d-block py-1"><span
+                                    class="me-2">•</span>WordPress Development</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Connect With Us -->
                 <div class="col-md-3">
                     <h5 class="fw-bold border-bottom border-2 pb-2 d-inline-block">Connect With Us</h5>
                     <p class="mt-3">Feel free to reach out to me through social media or email.</p>
-    
+
                     <!-- Contact Info -->
                     <div class="mt-3">
                         <p class="m-0"><i class="fas fa-phone-alt me-1"></i>+91 81283 55328</p>
                         <p class="mt-1"><i class="fas fa-envelope me-1"></i>rajmiyani06@gmail.com</p>
                     </div>
-    
+
                     <!-- Email Subscription -->
                     <div class="input-group mt-3">
-                        <input type="email" class="form-control shadow-none" placeholder="Enter your email" aria-label="Email" required>
-                        <button class="btn btn-primary" style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);" type="submit">Submit</button>
+                        <input type="email" class="form-control shadow-none" placeholder="Enter your email"
+                            aria-label="Email" required>
+                        <button class="btn btn-primary"
+                            style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);"
+                            type="submit">Submit</button>
                     </div>
                 </div>
-    
+
             </div>
-    
+
             <!-- Copyright -->
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 border-top pt-3">
                 <p class="mb-0 text-center text-md-start">&copy; 2025 | All Rights Reserved By Raj Miyani.</p>
                 <p class="mb-0">
-                    <a href="/terms-and-conditions.html" class="text-white text-decoration-none">Terms and Conditions</a>
+                    <a href="/terms-and-conditions.html" class="text-white text-decoration-none">Terms and
+                        Conditions</a>
                 </p>
             </div>
-    
+
         </div>
     </footer>
 
