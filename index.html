@@ -3,47 +3,54 @@
 
 <head>
     <!-- Basic Page Settings -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Page Title & Favicon -->
-    <title>Raj Miyani</title>
-    <link rel="shortcut icon" href="/assets/IMG-20241230-WA0137.jpg" type="image/x-icon">
+    <title>Raj Miyani | MERN Stack Developer</title>
+    <meta name="title" content="Raj Miyani | MERN Stack Developer" />
+    <meta name="description"
+        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
+    <link rel="shortcut icon" href="/assets/IMG-20241230-WA0137.jpg" type="image/x-icon" />
 
-    <!-- SEO Meta Tags -->
-    <meta property="og:description"
-        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. My skill set includes backend development, database management, and seamless deployment strategies. Passionate about crafting scalable, user-friendly solutions, I specialize in optimizing server performance, API integrations, and full-stack application development. My goal is to leverage modern technologies to create innovative, efficient, and engaging digital experiences." />
-    <meta property="og:site_name" content="Raj Miyani Portfolio" />
+    <!-- Keywords for SEO -->
     <meta name="keywords"
-        content="MERN-stack developer, Node.js developer, React.js developer, Full-stack web developer, Web application development, Scalable web applications, Backend development with Node.js, Frontend development with React.js, Database management (MongoDB, SQL), API development and integration, JavaScript web development, Modern web technologies, Best MERN-stack developer portfolio, Hire a full-stack web developer online, Scalable and dynamic web applications development, Expert in React.js and Node.js for web development, Web application optimization and deployment, Best Developer in surat, Raj Miyani, Raj Miyani Portfolio, How to build a Professional Website, Best Development Technologies.">
-    <meta name="author" content="Raj Miyani">
+        content="MERN-stack developer, Node.js developer, React.js developer, Full-stack web developer, Web application development, Scalable web applications, Backend development, Frontend development, API development, MongoDB, JavaScript, Raj Miyani Portfolio" />
+    <meta name="author" content="Raj Miyani" />
 
-    <!-- Open Graph (Social Media) Meta Tags -->
-    <meta property="og:title" content="Raj Miyani - MERN Stack Developer" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rajmiyani.vercel.app" />
-    <meta property="og:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Raj Miyani | MERN Stack Developer" />
     <meta property="og:description"
-        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. My skill set includes backend development, database management, and seamless deployment strategies. Passionate about crafting scalable, user-friendly solutions, I specialize in optimizing server performance, API integrations, and full-stack application development. My goal is to leverage modern technologies to create innovative, efficient, and engaging digital experiences." />
+        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
+    <meta property="og:url" content="https://rajmiyani.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
     <meta property="og:site_name" content="Raj Miyani Portfolio" />
 
-    <!-- Google Site Verification (For SEO & Ownership) -->
+    <!-- Twitter Card (optional but helpful) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Raj Miyani | MERN Stack Developer" />
+    <meta name="twitter:description"
+        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
+    <meta name="twitter:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+
+    <!-- Google Site Verification (optional) -->
     <meta name="google-site-verification" content="XKrqZN-TEZh0BxuW1CURxrko3N3IE6380h8RhNA1DCk" />
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="/links/bootstrap.min.css">
-    <link rel="stylesheet" href="/links/fontawesome.min.css">
+    <link rel="stylesheet" href="/links/bootstrap.min.css" />
+    <link rel="stylesheet" href="/links/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css" />
 
     <!-- jQuery & Slick Carousel -->
     <script src="/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
 
-    <!-- Add this inside <head> of your HTML -->
+    <!-- Spline Viewer -->
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"></script>
 
     <!-- Google Analytics -->
@@ -56,17 +63,17 @@
     </script>
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start': new Date().getTime(), event: 'gtm.js'
-            });
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
             var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M8PTQBJ8');</script>
-
+        })(window, document, 'script', 'dataLayer', 'GTM-M8PTQBJ8');
+    </script>
 </head>
 
 <body class="bg-black">
