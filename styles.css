@@ -196,7 +196,7 @@ button {
     transform: scale(1.1);
 }
 
-@keyframes float {
+/* @keyframes float {
     0% {
         transform: translateY(0);
     }
@@ -208,7 +208,7 @@ button {
     100% {
         transform: translateY(0);
     }
-}
+} */
 
 .skill-icon {
     width: 60%;
