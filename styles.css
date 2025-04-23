@@ -238,7 +238,7 @@ button {
 .timeline-item {
     position: relative;
     width: 50%;
-    padding: 5px 40px;
+    padding: 30px 40px;
     box-sizing: border-box;
 }
 
@@ -250,6 +250,10 @@ button {
 .timeline-item.right {
     left: 50%;
     text-align: left;
+}
+
+.timeline-content {
+    margin: 0px 25px;
 }
 
 /* Dot */
