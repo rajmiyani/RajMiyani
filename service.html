@@ -2,24 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ✅ Basic Page Settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ✅ Page Title & Favicon -->
     <title>Services - Raj Miyani</title>
-    <link rel="shortcut icon" href="../assets/IMG-20241230-WA0137.jpg" type="image/x-icon">
+    <meta name="title" content="Services | Raj Miyani | MERN Stack Developer" />
+    <link rel="shortcut icon" href="../assets/IMG-20241230-WA0137.jpg" type="image/x-icon" />
 
-    <link rel="stylesheet" href="../styles.css">
+    <!-- ✅ SEO Meta Tags -->
+    <meta name="description"
+        content="Discover the full-stack web development services offered by Raj Miyani, including React.js, Node.js, MongoDB, UI/UX, and scalable web applications." />
+    <meta name="keywords"
+        content="Services, Raj Miyani, MERN Stack Developer, React Developer, Node.js Developer, MongoDB, JavaScript Developer, Full Stack, Freelance Web Developer" />
+    <meta name="author" content="Raj Miyani" />
+    <meta name="robots" content="index, follow" />
 
+    <!-- ✅ Open Graph for Facebook / LinkedIn -->
+    <meta property="og:title" content="Services | Raj Miyani | MERN Stack Developer" />
+    <meta property="og:description"
+        content="Discover the web development services offered by Raj Miyani, MERN Stack Developer." />
+    <meta property="og:url" content="https://rajmiyani.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+    <meta property="og:site_name" content="Raj Miyani Portfolio" />
+
+    <!-- ✅ Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Services | Raj Miyani | MERN Stack Developer" />
+    <meta name="twitter:description"
+        content="Discover the web development services offered by Raj Miyani, MERN Stack Developer." />
+    <meta name="twitter:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+
+    <!-- ✅ Google Site Verification -->
+    <meta name="google-site-verification" content="XKrqZN-TEZh0BxuW1CURxrko3N3IE6380h8RhNA1DCk" />
+
+    <!-- ✅ Schema.org Structured Data -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Raj Miyani",
+    "url": "https://rajmiyani.vercel.app",
+    "sameAs": [
+      "https://www.linkedin.com/in/raj-miyani",
+      "https://github.com/rajmiyani"
+    ],
+    "jobTitle": "MERN Stack Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance / Open Source"
+    },
+    "description": "Raj Miyani is a full-stack web developer specializing in React.js, Node.js, and MongoDB. Passionate about building user-friendly, scalable applications.",
+    "image": "https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg"
+  }
+  </script>
+
+    <!-- ✅ CSS Files -->
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="./links/bootstrap.min.css" />
     <link rel="stylesheet" href="./links/all.min.css" />
     <link rel="stylesheet" href="./links/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ✅ JavaScript Libraries -->
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <!-- ✅ Spline 3D Viewer (Optional) -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"></script>
+
+    <!-- ✅ Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEY6LGD6EX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-KEY6LGD6EX');
+    </script>
+
+    <!-- ✅ Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M8PTQBJ8');
+    </script>
+
+    <!-- ✅ Page-specific Style -->
     <style>
         body {
             background-color: black;
@@ -31,33 +111,26 @@
             border: 2px solid;
         }
 
-        /* Adjust buttons based on the section image */
         .web-dev .btn-custom {
             border-color: #0088CC;
             color: #0088CC;
         }
 
-        /* MongoDB */
         .frontend .btn-custom {
             border-color: #0F172A;
             color: #1E3A8A;
         }
 
-        /* JavaScript */
         .backend .btn-custom {
             border-color: #3D2C8D;
             color: #3D2C8D;
         }
 
-        /* Node.js */
         .wordpress .btn-custom {
             border-color: #6D28D9;
             color: #6D28D9;
         }
 
-        /* WordPress */
-
-        /* Responsive: Show image first on small screens */
         @media (max-width: 768px) {
             .row {
                 flex-direction: column-reverse;
@@ -65,6 +138,7 @@
         }
     </style>
 </head>
+
 
 <body class="bg-black">
 

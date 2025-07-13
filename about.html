@@ -2,25 +2,102 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Raj Miyani</title>
-    <link rel="shortcut icon" href="../assets/IMG-20241230-WA0137.jpg" type="image/x-icon">
+    <!-- ✅ Basic Page Settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="stylesheet" href="./links/bootstrap.min.css" />
-    <link rel="stylesheet" href="./styles.css">
+    <!-- ✅ Page Title & Favicon -->
+    <title>About - Raj Miyani </title>
+    <meta name="title" content="Raj Miyani | MERN Stack Developer" />
+    <link rel="shortcut icon" href="/assets/IMG-20241230-WA0137.jpg" type="image/x-icon" />
 
-    <link rel="stylesheet" href="./links/all.min.css" />
-    <link rel="stylesheet" href="./links/fontawesome.min.css" />
+    <!-- ✅ SEO Meta Tags -->
+    <meta name="description"
+        content="Learn more about Raj Miyani is a MERN Stack Developer with expertise in React.js, Node.js, MongoDB, and Express. Explore his portfolio, projects, LinkedIn, and achievements." />
+    <meta name="keywords"
+        content="Raj Miyani, MERN-stack developer, Node.js developer, React.js developer, Full-stack web developer, Web application development, Portfolio, LinkedIn, MongoDB, JavaScript, Raj, Miyani, Mern Stack" />
+    <meta name="author" content="Raj Miyani" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ✅ Open Graph for Facebook / LinkedIn -->
+    <meta property="og:title" content="Raj Miyani | MERN Stack Developer" />
+    <meta property="og:description"
+        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
+    <meta property="og:url" content="https://rajmiyani.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+    <meta property="og:site_name" content="Raj Miyani Portfolio" />
+
+    <!-- ✅ Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Raj Miyani | MERN Stack Developer" />
+    <meta name="twitter:description"
+        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
+    <meta name="twitter:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+
+    <!-- ✅ Google Site Verification -->
+    <meta name="google-site-verification" content="XKrqZN-TEZh0BxuW1CURxrko3N3IE6380h8RhNA1DCk" />
+
+    <!-- ✅ Schema.org Structured Data (for SEO Rich Results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Raj Miyani",
+      "url": "https://rajmiyani.vercel.app",
+      "sameAs": [
+        "https://www.linkedin.com/in/raj-miyani",
+        "https://github.com/rajmiyani"
+      ],
+      "jobTitle": "MERN Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance / Open Source"
+      },
+      "description": "Raj Miyani is a full-stack web developer specializing in React.js, Node.js, and MongoDB. Passionate about building user-friendly, scalable applications.",
+      "image": "https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg"
+    }
+  </script>
+
+    <!-- ✅ CSS Files -->
+    <link rel="stylesheet" href="/links/bootstrap.min.css" />
+    <link rel="stylesheet" href="/links/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- ✅ JavaScript Libraries -->
+    <script src="/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- ✅ Spline 3D Viewer (Optional 3D animations) -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"></script>
+
+    <!-- ✅ Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEY6LGD6EX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-KEY6LGD6EX');
+    </script>
+
+    <!-- ✅ Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M8PTQBJ8');
+    </script>
 </head>
+
 
 <body class="bg-black">
     <header>
