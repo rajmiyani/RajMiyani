@@ -1,737 +1,1107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- ✅ Basic Page Settings -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- ✅ Page Title & Favicon -->
-    <title>Raj Miyani | MERN Stack Developer</title>
-    <meta name="title" content="Raj Miyani | MERN Stack Developer" />
-    <link rel="shortcut icon" href="/assets/IMG-20241230-WA0137.jpg" type="image/x-icon" />
+    <title>Raj Miyani | Expert MERN Stack Developer | React.js & Node.js</title>
+    <meta
+      name="title"
+      content="Raj Miyani | Expert MERN Stack Developer | React.js & Node.js"
+    />
+    <link rel="shortcut icon" href="./assets/Raj.png" type="image/x-icon" />
 
     <!-- ✅ SEO Meta Tags -->
-    <meta name="description"
-        content="Raj Miyani is a MERN Stack Developer with expertise in React.js, Node.js, MongoDB, and Express. Explore his portfolio, projects, LinkedIn, and achievements." />
-    <meta name="keywords"
-        content="Raj Miyani, MERN-stack developer, Node.js developer, React.js developer, Full-stack web developer, Web application development, Portfolio, LinkedIn, MongoDB, JavaScript, Raj, Miyani, Mern Stack" />
+    <meta
+      name="description"
+      content="Hire Raj Miyani, an expert MERN Stack Developer specializing in React.js, Node.js, MongoDB, and Express.js. Building scalable and dynamic web applications. Based in India."
+    />
+    <meta
+      name="keywords"
+      content="Raj Miyani, MERN Stack Developer, React.js Developer, Node.js Expert, Full-stack web developer, Hire MERN Developer, MongoDB, Express.js, Web application development, Freelance Developer Surat India, JavaScript, Frontend Developer, Backend Developer"
+    />
     <meta name="author" content="Raj Miyani" />
     <meta name="robots" content="index, follow" />
 
     <!-- ✅ Open Graph for Facebook / LinkedIn -->
-    <meta property="og:title" content="Raj Miyani | MERN Stack Developer" />
-    <meta property="og:description"
-        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
+    <meta
+      property="og:title"
+      content="Raj Miyani | Expert MERN Stack Developer | React.js & Node.js"
+    />
+    <meta
+      property="og:description"
+      content="Hire Raj Miyani, an expert MERN Stack Developer specializing in React.js, Node.js, MongoDB, and Express.js. Building scalable and dynamic web applications. Based in India."
+    />
     <meta property="og:url" content="https://rajmiyani.vercel.app" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+    <meta
+      property="og:image"
+      content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg"
+    />
     <meta property="og:site_name" content="Raj Miyani Portfolio" />
 
     <!-- ✅ Twitter Card Meta -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Raj Miyani | MERN Stack Developer" />
-    <meta name="twitter:description"
-        content="I am a MERN-stack developer with expertise in building high-performance web applications using Node.js and React.js. Passionate about crafting scalable, user-friendly solutions." />
-    <meta name="twitter:image" content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg" />
+    <meta
+      name="twitter:title"
+      content="Raj Miyani | Expert MERN Stack Developer | React.js & Node.js"
+    />
+    <meta
+      name="twitter:description"
+      content="Hire Raj Miyani, an expert MERN Stack Developer specializing in React.js, Node.js, MongoDB, and Express.js. Building scalable and dynamic web applications. Based in India."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg"
+    />
 
     <!-- ✅ Google Site Verification -->
-    <meta name="google-site-verification" content="XKrqZN-TEZh0BxuW1CURxrko3N3IE6380h8RhNA1DCk" />
+    <meta
+      name="google-site-verification"
+      content="XKrqZN-TEZh0BxuW1CURxrko3N3IE6380h8RhNA1DCk"
+    />
 
     <!-- ✅ Schema.org Structured Data (for SEO Rich Results) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Raj Miyani",
-      "url": "https://rajmiyani.vercel.app",
-      "sameAs": [
-        "https://www.linkedin.com/in/raj-miyani",
-        "https://github.com/rajmiyani"
-      ],
-      "jobTitle": "MERN Stack Developer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Freelance / Open Source"
-      },
-      "description": "Raj Miyani is a full-stack web developer specializing in React.js, Node.js, and MongoDB. Passionate about building user-friendly, scalable applications.",
-      "image": "https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg"
-    }
-  </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Raj Miyani",
+        "url": "https://rajmiyani.vercel.app",
+        "sameAs": [
+          "https://www.linkedin.com/in/raj-miyani",
+          "https://github.com/rajmiyani"
+        ],
+        "jobTitle": "MERN Stack Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance / Open Source"
+        },
+        "description": "Raj Miyani is a full-stack web developer specializing in React.js, Node.js, and MongoDB. Passionate about building user-friendly, scalable applications.",
+        "image": "https://rajmiyani.vercel.app/assets/IMG-20241230-WA0137.jpg"
+      }
+    </script>
+
+    <!-- ✅ Preload Critical Assets for Speed -->
+    <link rel="preload" href="./styles.css" as="style" />
+    <link rel="preload" href="./assets/Raj.png" as="image" />
 
     <!-- ✅ CSS Files -->
-    <link rel="stylesheet" href="/links/bootstrap.min.css" />
-    <link rel="stylesheet" href="/links/fontawesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./links/bootstrap.min.css" />
+    <link rel="stylesheet" href="./links/fontawesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
 
-    <!-- ✅ JavaScript Libraries -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <!-- ✅ JavaScript Libraries (Deferred) -->
+    <script defer src="./js/jquery.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"
+    ></script>
 
-    <!-- ✅ Spline 3D Viewer (Optional 3D animations) -->
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"></script>
+    <!-- ✅ Spline 3D Viewer (Deferred so it doesn't block load) -->
+    <script
+      type="module"
+      defer
+      src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"
+    ></script>
 
     <!-- ✅ Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEY6LGD6EX"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KEY6LGD6EX"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-KEY6LGD6EX');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-KEY6LGD6EX");
     </script>
 
     <!-- ✅ Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M8PTQBJ8');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M8PTQBJ8");
     </script>
-</head>
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-
-<body class="bg-black">
-
+  <body class="bg-black">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8PTQBJ8" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M8PTQBJ8"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
 
     <!-- Header -->
     <header>
-        <div class="container header-container d-flex text-white py-3 justify-content-between align-items-center">
-            <!-- Logo -->
-            <div>
-                <h1 class="fs-4 py-1 border px-3 rounded-pill m-0">R M</h1>
-            </div>
-
-            <!-- Desktop Navigation -->
-            <div class="d-none d-lg-block">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="service.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="certificate.html">Certificate</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Offcanvas Toggle Button (Mobile) -->
-            <button class="border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                <i class="fa-solid fa-bars text-white fs-4"></i>
-            </button>
+      <div
+        class="container header-container d-flex text-white py-3 justify-content-between align-items-center"
+      >
+        <!-- Logo -->
+        <div>
+          <h1 class="fs-4 py-1 border px-3 rounded-pill m-0">R M</h1>
         </div>
 
-        <!-- Offcanvas Menu (Mobile Navigation) -->
-        <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasMenu">
-            <div class="offcanvas-header">
-                <h1 class="fs-4 py-1 border px-3 rounded-pill text-dark m-0">R M</h1>
-                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
-            </div>
-
-            <div class="offcanvas-body">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active text-black" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="service.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="certificate.html">Certificate</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Desktop Navigation -->
+        <div class="d-none d-lg-block">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="certificate.html"
+                >Certificate</a
+              >
+            </li>
+          </ul>
         </div>
+
+        <!-- Offcanvas Toggle Button (Mobile) -->
+        <button
+          class="border-0 bg-transparent d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu"
+        >
+          <i class="fa-solid fa-bars text-white fs-4"></i>
+        </button>
+      </div>
+
+      <!-- Offcanvas Menu (Mobile Navigation) -->
+      <div
+        class="offcanvas offcanvas-start bg-white"
+        tabindex="-1"
+        id="offcanvasMenu"
+      >
+        <div class="offcanvas-header">
+          <h1 class="fs-4 py-1 border px-3 rounded-pill text-dark m-0">R M</h1>
+          <button
+            type="button"
+            class="btn-close shadow-none"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active text-black" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="certificate.html"
+                >Certificate</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- intro -->
-    <section class="section my-lg-5 py-lg-5" id="aboutme">
-        <div class="container d-flex flex-column flex-lg-row align-items-center">
-            <div class="col-lg-7 px-3 py-5 text-light about-content text-center text-lg-start">
-                <h1>Hello, It's Me</h1>
-                <h1 class="fw-bold" style="font-size: 85px;">Raj Miyani</h1>
-                <h3>BUILDING WEB EXPERIENCE BETTER</h3>
-                <div class="my-4">
-                    <a href="https://github.com/rajmiyani" target="_blank" class="text-decoration-none">
-                        <i class="text-white fa-brands border border-2 me-2 fs-4 fw-bold rounded-circle fa-github"
-                            style="padding: 10px 12px;"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/raj-miyani-40a4812b3/" target="_blank" class="text-decoration-none">
-                        <i class="text-white fa-brands border border-2 me-2 fs-4 fw-bold rounded-circle fa-linkedin"
-                            style="padding: 10px 12px"></i>
-                    </a>
-                    <a href="mailto:rajmiyani06@gmail.com?subject=Hello%20there&amp;body=My%20Name%20is%20" class="text-decoration-none">
-                        <i class="text-white fa-solid border border-2 me-2 fs-4 fw-bold rounded-circle fa-envelope"
-                            style="padding: 10px 11px"></i>
-                    </a>
-                    <a href="https://wa.me/918128355328" target="_blank">
-                        <i class="fa-whatsapp fa-brands border border-2 me-2 fs-4 fw-bold rounded-circle text-white"
-                            style="padding: 10px 12px"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="/about.html"
-                        class="px-4 py-3 d-inline-block text-white border border-2 rounded-pill text-decoration-none fs-5"
-                        style="max-width: 100%; white-space: nowrap;">
-                        EXPLORE MORE <i class="fa-solid fa-arrow-right ms-2"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-5 col-12 px-lg-5 px-3 d-flex justify-content-center">
-                <img src="/assets/IMG-20241230-WA0137.jpg" class="profile-img img-fluid rounded-circle"
-                    alt="Raj Miyani" />
-            </div>
+    <section class="section py-5 my-5" data-aos="fade-up" id="aboutme">
+      <div class="container d-flex flex-column flex-lg-row align-items-center">
+        <div
+          class="col-lg-7 px-3 py-5 text-light about-content text-center text-lg-start"
+        >
+          <h1>Hello, It's Me</h1>
+          <h1 class="fw-bold" style="font-size: 85px">Raj Miyani</h1>
+          <h2 class="h3">BUILDING SCALABLE FULL-STACK WEB EXPERIENCES</h2>
+          <div class="my-4">
+            <a
+              href="https://github.com/rajmiyani"
+              target="_blank"
+              class="text-decoration-none"
+              aria-label="GitHub Profile"
+            >
+              <i
+                class="text-white fa-brands border border-2 me-2 fs-4 fw-bold rounded-circle fa-github"
+                style="padding: 10px 12px"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/raj-miyani-40a4812b3/"
+              target="_blank"
+              class="text-decoration-none"
+              aria-label="LinkedIn Profile"
+            >
+              <i
+                class="text-white fa-brands border border-2 me-2 fs-4 fw-bold rounded-circle fa-linkedin"
+                style="padding: 10px 12px"
+              ></i>
+            </a>
+            <a
+              href="mailto:rajmiyani06@gmail.com?subject=Hello%20there&amp;body=My%20Name%20is%20"
+              class="text-decoration-none"
+              aria-label="Email Contact"
+            >
+              <i
+                class="text-white fa-solid border border-2 me-2 fs-4 fw-bold rounded-circle fa-envelope"
+                style="padding: 10px 11px"
+              ></i>
+            </a>
+            <a
+              href="https://wa.me/918128355328"
+              target="_blank"
+              aria-label="WhatsApp Contact"
+            >
+              <i
+                class="fa-whatsapp fa-brands border border-2 me-2 fs-4 fw-bold rounded-circle text-white"
+                style="padding: 10px 12px"
+              ></i>
+            </a>
+          </div>
+          <div>
+            <a
+              href="./about.html"
+              class="px-4 py-3 d-inline-block text-white border border-2 rounded-pill text-decoration-none fs-5"
+              style="max-width: 100%; white-space: nowrap"
+            >
+              EXPLORE MORE <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+          </div>
         </div>
+        <div class="col-lg-5 col-12 px-lg-5 px-3 d-flex justify-content-center">
+          <img
+            src="./assets/Raj.png"
+            class="profile-img img-fluid rounded-circle"
+            alt="Raj Miyani - Expert MERN Stack Developer"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- about -->
 
-    <section class="section my-0 position-relative">
-        <div class="container h-100 dja" id="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Left Image (Moved outside container using negative margins) -->
-                    <div class="col-lg-6 d-none d-lg-block text-center"
-                        style="margin-top: 100px; position: relative; left: -50px;">
-                        <img src="assets/AboutUs.webp" alt="About Me" class="rounded-circle img-fluid"
-                            style="max-width: 500px; box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);">
-                    </div>
-                    <!-- <div class="col-lg-6 d-none d-lg-block">
+    <section class="section py-5 my-5 position-relative" data-aos="fade-up">
+      <div class="container h-100 dja" id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Left Image (Moved outside container using negative margins) -->
+            <div
+              class="col-lg-6 d-none d-lg-block text-center"
+              style="margin-top: 100px; position: relative; left: -50px"
+            >
+              <img
+                src="assets/AboutUs.webp"
+                alt="Raj Miyani - About MERN Stack Development Experience"
+                class="rounded-circle img-fluid"
+                style="
+                  max-width: 500px;
+                  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+                "
+              />
+            </div>
+            <!-- <div class="col-lg-6 d-none d-lg-block">
                         <spline-viewer
                             url="https://my.spline.design/untitled-11eed0abbde64ad5ab3974952e0f305e/"></spline-viewer>
                     </div> -->
 
-                    <!-- Right Content (Remains in container) -->
-                    <div class="col-lg-6 col-12 text-white">
-                        <h1 class="z2 m-0 mt-5 fs-title-small pt-5 px-3 px-lg-0" style="font-size: 64px">
-                            ABOUT ME
-                        </h1>
-                        <p class="mt-4 fs-5">Hello! I'm Raj Miyani, a passionate MERN Stack Developer dedicated to
-                            building
-                            high-performance, scalable, and user-friendly web applications. With expertise in MongoDB,
-                            Express.js,
-                            React.js, and Node.js, I specialize in developing modern full-stack solutions that enhance
-                            user experience
-                            and business efficiency.</p>
-                        <div class="mt-4">
-                            <a href="/about.html"
-                                class="px-4 py-3 d-inline-block text-white border border-2 rounded-pill text-decoration-none fs-5"
-                                style="max-width: 100%; white-space: nowrap;">
-                                ABOUT ME <i class="fa-solid fa-arrow-right ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <!-- Right Content (Remains in container) -->
+            <div class="col-lg-6 col-12 text-white">
+              <h1
+                class="z2 m-0 mt-5 fs-title-small pt-5 px-3 px-lg-0"
+                style="font-size: 64px"
+              >
+                ABOUT ME
+              </h1>
+              <p class="mt-4 fs-5">
+                Hello! I'm Raj Miyani, a passionate MERN Stack Developer
+                dedicated to building high-performance, scalable, and
+                user-friendly web applications. With expertise in MongoDB,
+                Express.js, React.js, and Node.js, I specialize in developing
+                modern full-stack solutions that enhance user experience and
+                business efficiency.
+              </p>
+              <div class="mt-4">
+                <a
+                  href="./about.html"
+                  class="px-4 py-3 d-inline-block text-white border border-2 rounded-pill text-decoration-none fs-5"
+                  style="max-width: 100%; white-space: nowrap"
+                >
+                  ABOUT ME <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- services -->
-    <section class="section my-lg-5 pt-1 text-white services">
-        <h1 class="z2 m-0 my-5 text-center fs-title-small" style="font-size: 64px">SERVICES</h1>
+    <section class="section py-5 my-5 text-white services" data-aos="fade-up">
+      <h1
+        class="z2 m-0 my-5 text-center fs-title-small"
+        style="font-size: 64px"
+      >
+        SERVICES
+      </h1>
 
-        <div class="container">
-            <!-- Grid Layout for Large Screens (Hidden on Small Screens) -->
-            <div class="row d-none d-lg-flex">
-                <div class="col-12 col-sm-6 col-lg-3 p-2">
-                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                        <img class="zoom-img" width="100%" src="assets/Web-Development.jpg" alt="Web Development">
-                        <h6 class="m-0 mt-2">1. Web Development</h6>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 p-2">
-                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                        <img width="100%" src="assets/Frontend.jpg" alt="Frontend Development">
-                        <h6 class="m-0 mt-2">2. Frontend Development</h6>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 p-2">
-                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                        <img width="102%" src="assets/Backend.jpeg" alt="Backend Development">
-                        <h6 class="m-0 mt-2">3. Backend Development</h6>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 p-2">
-                    <div class="rounded-3 text-center p-3" style="border: 2px solid rgba(51, 50, 50, 0.559)">
-                        <img width="105%" src="assets/Wordpress.png" alt="Wordpress Development">
-                        <h6 class="m-0 mt-2">4. Wordpress Development</h6>
-                    </div>
-                </div>
+      <div class="container">
+        <!-- Grid Layout for Large Screens (Hidden on Small Screens) -->
+        <div class="row d-none d-lg-flex">
+          <div class="col-12 col-sm-6 col-lg-3 p-2">
+            <div
+              class="rounded-3 text-center p-3"
+              style="border: 2px solid rgba(51, 50, 50, 0.559)"
+            >
+              <img
+                class="zoom-img"
+                width="100%"
+                src="assets/Web-Development.jpg"
+                alt="Professional Web Development Services by Raj Miyani"
+              />
+              <h6 class="m-0 mt-2">1. Web Development</h6>
             </div>
-
-            <!-- Carousel for Small Screens (Hidden on Large Screens) -->
-            <!-- Carousel Container -->
-            <div id="servicesCarousel" class="carousel slide d-block d-lg-none" data-bs-ride="carousel"
-                style="position: relative;">
-
-                <!-- Carousel Items -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="rounded-3 text-center p-3 mx-auto"
-                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
-                            <img class="zoom-img" width="100%" src="assets/Web-Development.jpg" alt="Web Development">
-                            <h6 class="m-0 mt-2">1. Web Development</h6>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="rounded-3 text-center p-3 mx-auto"
-                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
-                            <img width="100%" src="assets/Frontend.jpg" alt="Frontend Development">
-                            <h6 class="m-0 mt-2">2. Frontend Development</h6>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="rounded-3 text-center p-3 mx-auto"
-                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
-                            <img width="100%" src="assets/Backend.jpeg" alt="Backend Development">
-                            <h6 class="m-0 mt-2">3. Backend Development</h6>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="rounded-3 text-center p-3 mx-auto"
-                            style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%;">
-                            <img width="100%" src="assets/Wordpress.png" alt="Wordpress Development">
-                            <h6 class="m-0 mt-2">4. Wordpress Development</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Custom Positioned Indicators -->
-                <div class="carousel-indicators" style="bottom: -50px;">
-                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0"
-                        class="active"></button>
-                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"></button>
-                </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 p-2">
+            <div
+              class="rounded-3 text-center p-3"
+              style="border: 2px solid rgba(51, 50, 50, 0.559)"
+            >
+              <img
+                width="100%"
+                src="assets/Frontend.jpg"
+                alt="Frontend React.js Development Services"
+              />
+              <h6 class="m-0 mt-2">2. Frontend Development</h6>
             </div>
-
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 p-2">
+            <div
+              class="rounded-3 text-center p-3"
+              style="border: 2px solid rgba(51, 50, 50, 0.559)"
+            >
+              <img
+                width="102%"
+                src="assets/Backend.jpeg"
+                alt="Backend Node.js & MongoDB Development Services"
+              />
+              <h6 class="m-0 mt-2">3. Backend Development</h6>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 p-2">
+            <div
+              class="rounded-3 text-center p-3"
+              style="border: 2px solid rgba(51, 50, 50, 0.559)"
+            >
+              <img
+                width="105%"
+                src="assets/Wordpress.png"
+                alt="WordPress Theme and Plugin Customization"
+              />
+              <h6 class="m-0 mt-2">4. Wordpress Development</h6>
+            </div>
+          </div>
         </div>
+
+        <!-- Carousel for Small Screens (Hidden on Large Screens) -->
+        <!-- Carousel Container -->
+        <div
+          id="servicesCarousel"
+          class="carousel slide d-block d-lg-none"
+          data-bs-ride="carousel"
+          style="position: relative"
+        >
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="rounded-3 text-center p-3 mx-auto"
+                style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%"
+              >
+                <img
+                  class="zoom-img"
+                  width="100%"
+                  src="assets/Web-Development.jpg"
+                  alt="Professional Web Development Services by Raj Miyani"
+                />
+                <h6 class="m-0 mt-2">1. Web Development</h6>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="rounded-3 text-center p-3 mx-auto"
+                style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%"
+              >
+                <img
+                  width="100%"
+                  src="assets/Frontend.jpg"
+                  alt="Frontend React.js Development Services"
+                />
+                <h6 class="m-0 mt-2">2. Frontend Development</h6>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="rounded-3 text-center p-3 mx-auto"
+                style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%"
+              >
+                <img
+                  width="100%"
+                  src="assets/Backend.jpeg"
+                  alt="Backend Node.js & MongoDB Development Services"
+                />
+                <h6 class="m-0 mt-2">3. Backend Development</h6>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="rounded-3 text-center p-3 mx-auto"
+                style="border: 2px solid rgba(51, 50, 50, 0.559); width: 80%"
+              >
+                <img
+                  width="100%"
+                  src="assets/Wordpress.png"
+                  alt="WordPress Theme and Plugin Customization"
+                />
+                <h6 class="m-0 mt-2">4. Wordpress Development</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Positioned Indicators -->
+          <div class="carousel-indicators" style="bottom: -50px">
+            <button
+              type="button"
+              data-bs-target="#servicesCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#servicesCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#servicesCarousel"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#servicesCarousel"
+              data-bs-slide-to="3"
+            ></button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- skills -->
 
-    <section class="section skills-section">
-        <h1 class="text-center my-5 text-white" style="font-size: 64px;">SKILLS</h1>
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Skill Bubbles -->
-                <!-- HTML -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">HTML</h6>
-                </div>
-
-                <!-- CSS -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">CSS</h6>
-                </div>
-
-                <!-- Tailwind CSS -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://tailwindcss.com/" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">TAILWIND CSS</h6>
-                </div>
-
-                <!-- Bootstrap -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://getbootstrap.com/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">BOOTSTRAP</h6>
-                </div>
-
-                <!-- jQuery -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://jquery.com/" target="_blank">
-                            <img src="https://play-lh.googleusercontent.com/LpgnH_rHqhJzlJ-uWhfMj3w87cu6iWV5m1hr6eos1wmdlqRiF0RsNE1RBmgtsPvyyBI"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">JQUERY</h6>
-                </div>
-
-                <!-- JavaScript -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">JAVASCRIPT</h6>
-                </div>
-
-                <!-- React -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://react.dev/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">REACT.JS</h6>
-                </div>
-
-                <!-- Next.js -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://nextjs.org/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nextjs/nextjs-original.svg"
-                                class="skill-icon" style="filter: brightness(1000) invert(1)" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">NEXT.JS</h6>
-                </div>
-
-
-                <!-- Node.js -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://nodejs.org/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">NODE.JS</h6>
-                </div>
-
-                <!-- MongoDB -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://www.mongodb.com/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">MONGODB</h6>
-                </div>
-
-                <!-- Express -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://expressjs.com/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/express/express-original.svg"
-                                class="skill-icon" style="filter: brightness(1000) invert(1)" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">EXPRESS.JS</h6>
-                </div>
-
-                <!-- Socket.IO -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://socket.io/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/socketio/socketio-original.svg"
-                                class="skill-icon" style="filter: brightness(1000) invert(1)" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">SOCKET.IO</h6>
-                </div>
-
-                <!-- WordPress -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://wordpress.com/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/wordpress/wordpress-plain.svg"
-                                class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">WORDPRESS</h6>
-                </div>
-
-                <!-- SEO -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://moz.com/learn/seo/what-is-seo" target="_blank">
-                            <img src="https://cdn-icons-png.flaticon.com/512/10701/10701004.png" class="skill-icon" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">SEO</h6>
-                </div>
-
-                <!-- GitHub -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://github.com/" target="_blank">
-                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="skill-icon"
-                                style="filter: brightness(1000) invert(1)" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">GITHUB</h6>
-                </div>
-
-                <!-- Vercel -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                    <div class="skill-bubble">
-                        <a href="https://vercel.com/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vercel/vercel-original.svg"
-                                class="skill-icon" style="filter: brightness(1000) invert(1)" />
-                        </a>
-                    </div>
-                    <h6 class="text-white mt-3">VERCEL</h6>
-                </div>
+    <section class="section py-5 my-5 skills-section" data-aos="fade-up">
+      <h1 class="text-center my-5 text-white" style="font-size: 64px">
+        SKILLS
+      </h1>
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Skill Bubbles -->
+          <!-- HTML -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg"
+                  class="skill-icon"
+                />
+              </a>
             </div>
+            <h6 class="text-white mt-3">HTML</h6>
+          </div>
+
+          <!-- CSS -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">CSS</h6>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://tailwindcss.com/" target="_blank">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">TAILWIND CSS</h6>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://getbootstrap.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">BOOTSTRAP</h6>
+          </div>
+
+          <!-- jQuery -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://jquery.com/" target="_blank">
+                <img
+                  src="https://play-lh.googleusercontent.com/LpgnH_rHqhJzlJ-uWhfMj3w87cu6iWV5m1hr6eos1wmdlqRiF0RsNE1RBmgtsPvyyBI"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">JQUERY</h6>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">JAVASCRIPT</h6>
+          </div>
+
+          <!-- React -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://react.dev/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">REACT.JS</h6>
+          </div>
+
+          <!-- Next.js -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://nextjs.org/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nextjs/nextjs-original.svg"
+                  class="skill-icon"
+                  style="filter: brightness(1000) invert(1)"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">NEXT.JS</h6>
+          </div>
+
+          <!-- Node.js -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://nodejs.org/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">NODE.JS</h6>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://www.mongodb.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">MONGODB</h6>
+          </div>
+
+          <!-- Express -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://expressjs.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/express/express-original.svg"
+                  class="skill-icon"
+                  style="filter: brightness(1000) invert(1)"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">EXPRESS.JS</h6>
+          </div>
+
+          <!-- Socket.IO -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://socket.io/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/socketio/socketio-original.svg"
+                  class="skill-icon"
+                  style="filter: brightness(1000) invert(1)"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">SOCKET.IO</h6>
+          </div>
+
+          <!-- WordPress -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://wordpress.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/wordpress/wordpress-plain.svg"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">WORDPRESS</h6>
+          </div>
+
+          <!-- SEO -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://moz.com/learn/seo/what-is-seo" target="_blank">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/10701/10701004.png"
+                  class="skill-icon"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">SEO</h6>
+          </div>
+
+          <!-- GitHub -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://github.com/" target="_blank">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  class="skill-icon"
+                  style="filter: brightness(1000) invert(1)"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">GITHUB</h6>
+          </div>
+
+          <!-- Vercel -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div class="skill-bubble" data-aos="flip-left">
+              <a href="https://vercel.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vercel/vercel-original.svg"
+                  class="skill-icon"
+                  style="filter: brightness(1000) invert(1)"
+                />
+              </a>
+            </div>
+            <h6 class="text-white mt-3">VERCEL</h6>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects -->
-    <section class="section">
-        <h1 class="m-0 mt-0 fs-title-small pt-5 px-3 px-lg-0 text-white d-flex justify-content-center"
-            style="font-size: 64px;">
-            MY WORK'S
-        </h1>
+    <section class="section py-5 my-5" data-aos="fade-up">
+      <h1
+        class="m-0 mt-0 fs-title-small pt-5 px-3 px-lg-0 text-white d-flex justify-content-center"
+        style="font-size: 64px"
+      >
+        MY WORK'S
+      </h1>
 
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12 mb-4">
-                    <div class="card border-0">
-                        <img src="./assets/Burger.jpg" class="card-img-top " alt="..." style="height: 200px;">
-                        <div class="card-body">
-                            <h6 class="card-title fw-bold">Caterserv</h6>
-                            <p class="card-text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore eit esdioilore magna aliqua.</p>
-                            <a href="./CaterServ/index.html" class="btn rounded-pill text-white border-0"
-                                style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);">View
-                                Project <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4">
-                    <div class="card border-0">
-                        <img src="./assets/about-img.png" class="card-img-top" alt="..." style="height: 200px;">
-                        <div class="card-body">
-                            <h6 class="card-title fw-bold">Dozecafe</h6>
-                            <p class="card-text">At Dozecafe, coffee isn’t just a drink it’s an experience.The
-                                secret to great coffee lies in the brewing process.</p>
-                            <a href="./Dozecafe/html/index.html" class="btn rounded-pill text-white boredr-0"
-                                style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);">View
-                                Project <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4">
-                    <div class="card border-0">
-                        <img src="./assets/carousel-1.jpg" class="card-img-top" alt="..." style="height: 200px;">
-                        <div class="card-body">
-                            <h6 class="card-title fw-bold">StartUp</h6>
-                            <p class="card-text">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                                tempor
-                                sit. Aliqu diam amet diam et eos labore. </p>
-                            <a href="./startup-website/index.html" class="btn rounded-pill text-white border-0"
-                                style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);">View
-                                Project <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4">
-                    <div class="card border-0">
-                        <img src="./assets/knight.jpg" class="card-img-top" alt="..." style="height: 200px;">
-                        <div class="card-body">
-                            <h6 class="card-title fw-bold">Knight</h6>
-                            <p class="card-text">Feugiat pretium nibh consequat.Tempus iaculis id volutpat lacus
-                                laoreet non curabitur gravida</p>
-                            <a href="./knight/index.html" class="btn rounded-pill text-white border-0"
-                                style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);">View
-                                Project <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card border-0" data-aos="fade-up">
+              <img
+                src="./assets/Burger.jpg"
+                class="card-img-top"
+                data-aos="fade-up"
+                alt="..."
+                style="height: 200px"
+              />
+              <div class="card-body" data-aos="fade-up">
+                <h6 class="card-title fw-bold" data-aos="fade-up">Caterserv</h6>
+                <p class="card-text" data-aos="fade-up">
+                  Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore eit esdioilore magna aliqua.
+                </p>
+                <a
+                  href="./CaterServ/index.html"
+                  class="btn rounded-pill text-white border-0 btn-gradient"
+                  >View Project <i class="fa-solid fa-arrow-right ms-2"></i
+                ></a>
+              </div>
             </div>
+          </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12 mb-4">
-                    <div class="card border-0">
-                        <img src="./assets/bg-hero.jpg" class="card-img-top" alt="..." style="height: 200px;">
-                        <div class="card-body">
-                            <h6 class="card-title fw-bold">Touriest</h6>
-                            <p class="card-text">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                                Aliqu
-                                diam amet diam et eos.</p>
-                            <a href="./travel-agency/index.html" class="btn rounded-pill text-white border-0"
-                                style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);">View
-                                Project <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4">
-                    <div class="card border-0">
-                        <img src="./assets/calculator.jpg" class="card-img-top" alt="..." style="height: 200px;">
-                        <div class="card-body">
-                            <h6 class="card-title fw-bold">Calculator</h6>
-                            <p class="card-text">Numbers power the world, and with the right calculator, solving
-                                complex equations becomes effortless.</p>
-                            <a href="./Calculator/index.html" class="btn rounded-pill text-white border-0"
-                                style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);">View
-                                Project <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4">
-                    <div class="card border-0">
-                        <img src="./assets/StudentFess.png" class="card-img-top" alt="..." style="height: 200px;">
-                        <div class="card-body">
-                            <h6 class="card-title fw-bold">Student Fees Panel <br> (Node.js)</h6>
-                            <p class="card-text mb-0">Email: raj@g.c</p>
-                            <p class="card-text">Password: 12</p>
-                            <a href="https://student-fees-pannel-1.onrender.com"
-                                class="btn rounded-pill text-white border-0"
-                                style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);">View
-                                Project <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4">
-                    <div class="card border-0">
-                        <img src="./assets/360_F_927145725_75bq3HE3KuHi35b3M6hAB3q2Ar2tLKxn.jpg" class="card-img-top"
-                            alt="..." style="height: 200px;">
-                        <div class="card-body">
-                            <h6 class="card-title fw-bold">Question & Answer Panel <br> (Node.js)</h6>
-                            <p class="card-text mb-0">Email: rajmiyani06@gmail.com</p>
-                            <p class="card-text">Password: 12</p>
-                            <a href=" https://question-answer-fck1.onrender.com"
-                                class="btn rounded-pill text-white border-0"
-                                style="background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);">View
-                                Project <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card border-0" data-aos="fade-up">
+              <img
+                src="./assets/about-img.png"
+                class="card-img-top"
+                data-aos="fade-up"
+                alt="..."
+                style="height: 200px"
+              />
+              <div class="card-body" data-aos="fade-up">
+                <h6 class="card-title fw-bold" data-aos="fade-up">Dozecafe</h6>
+                <p class="card-text" data-aos="fade-up">
+                  At Dozecafe, coffee isn’t just a drink it’s an experience.The
+                  secret to great coffee lies in the brewing process.
+                </p>
+                <a
+                  href="./Dozecafe/html/index.html"
+                  class="btn rounded-pill text-white border-0 btn-gradient"
+                  >View Project <i class="fa-solid fa-arrow-right ms-2"></i
+                ></a>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card border-0" data-aos="fade-up">
+              <img
+                src="./assets/carousel-1.jpg"
+                class="card-img-top"
+                data-aos="fade-up"
+                alt="..."
+                style="height: 200px"
+              />
+              <div class="card-body" data-aos="fade-up">
+                <h6 class="card-title fw-bold" data-aos="fade-up">StartUp</h6>
+                <p class="card-text" data-aos="fade-up">
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
+                  tempor sit. Aliqu diam amet diam et eos labore.
+                </p>
+                <a
+                  href="./startup-website/index.html"
+                  class="btn rounded-pill text-white border-0 btn-gradient"
+                  >View Project <i class="fa-solid fa-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card border-0" data-aos="fade-up">
+              <img
+                src="./assets/knight.jpg"
+                class="card-img-top"
+                data-aos="fade-up"
+                alt="..."
+                style="height: 200px"
+              />
+              <div class="card-body" data-aos="fade-up">
+                <h6 class="card-title fw-bold" data-aos="fade-up">Knight</h6>
+                <p class="card-text" data-aos="fade-up">
+                  Feugiat pretium nibh consequat.Tempus iaculis id volutpat
+                  lacus laoreet non curabitur gravida
+                </p>
+                <a
+                  href="./knight/index.html"
+                  class="btn rounded-pill text-white border-0 btn-gradient"
+                  >View Project <i class="fa-solid fa-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card border-0" data-aos="fade-up">
+              <img
+                src="./assets/bg-hero.jpg"
+                class="card-img-top"
+                data-aos="fade-up"
+                alt="..."
+                style="height: 200px"
+              />
+              <div class="card-body" data-aos="fade-up">
+                <h6 class="card-title fw-bold" data-aos="fade-up">Touriest</h6>
+                <p class="card-text" data-aos="fade-up">
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                  Aliqu diam amet diam et eos.
+                </p>
+                <a
+                  href="./travel-agency/index.html"
+                  class="btn rounded-pill text-white border-0 btn-gradient"
+                  >View Project <i class="fa-solid fa-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card border-0" data-aos="fade-up">
+              <img
+                src="./assets/calculator.jpg"
+                class="card-img-top"
+                data-aos="fade-up"
+                alt="..."
+                style="height: 200px"
+              />
+              <div class="card-body" data-aos="fade-up">
+                <h6 class="card-title fw-bold" data-aos="fade-up">
+                  Calculator
+                </h6>
+                <p class="card-text" data-aos="fade-up">
+                  Numbers power the world, and with the right calculator,
+                  solving complex equations becomes effortless.
+                </p>
+                <a
+                  href="./Calculator/index.html"
+                  class="btn rounded-pill text-white border-0 btn-gradient"
+                  >View Project <i class="fa-solid fa-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card border-0" data-aos="fade-up">
+              <img
+                src="./assets/StudentFess.png"
+                class="card-img-top"
+                data-aos="fade-up"
+                alt="..."
+                style="height: 200px"
+              />
+              <div class="card-body" data-aos="fade-up">
+                <h6 class="card-title fw-bold" data-aos="fade-up">
+                  Student Fees Panel <br />
+                  (Node.js)
+                </h6>
+                <p class="card-text mb-0" data-aos="fade-up">Email: raj@g.c</p>
+                <p class="card-text" data-aos="fade-up">Password: 12</p>
+                <a
+                  href="https://student-fees-pannel-1.onrender.com"
+                  class="btn rounded-pill text-white border-0 btn-gradient"
+                  >View Project <i class="fa-solid fa-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card border-0" data-aos="fade-up">
+              <img
+                src="./assets/360_F_927145725_75bq3HE3KuHi35b3M6hAB3q2Ar2tLKxn.jpg"
+                class="card-img-top"
+                data-aos="fade-up"
+                alt="..."
+                style="height: 200px"
+              />
+              <div class="card-body" data-aos="fade-up">
+                <h6 class="card-title fw-bold" data-aos="fade-up">
+                  Question & Answer Panel <br />
+                  (Node.js)
+                </h6>
+                <p class="card-text mb-0" data-aos="fade-up">
+                  Email: rajmiyani06@gmail.com
+                </p>
+                <p class="card-text" data-aos="fade-up">Password: 12</p>
+                <a
+                  href=" https://question-answer-fck1.onrender.com"
+                  class="btn rounded-pill text-white border-0 btn-gradient"
+                  >View Project <i class="fa-solid fa-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- certificates -->
-    <section class="section my-5 text-white">
-        <h1 class="z2 m-0 my-5 text-center fs-title-small" style="font-size: 64px;">
-            CERTIFICATES
-        </h1>
-        <div class="container mt-5">
-            <div class="education-container row justify-content-center">
-                <!-- Card 1 -->
-                <div class="education-card p-3 col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-black rounded border border-secondary">
-                        <img src="assets/Morsy.jpg" class="w-100" alt="Morsy Multimedia">
-                        <div class="p-3">
-                            <h6>1. Morsy MULTIMEDIA</h6>
-                            <p>My IT journey began at Morsy Multimedia, where I successfully completed a Full Stack
-                                Development Course with excellent grades.</p>
-                            <p class="m-0">2023 - 2024</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="education-card p-3 col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-black rounded border border-secondary">
-                        <img src="assets/education.jpg" class="w-100" style="background-repeat: no-repeat;"
-                            alt="MERN Stack Development">
-                        <div class="p-3">
-                            <h6>2. VEER NARMAD SOUTH GUJARAT UNIVERSITY</h6>
-                            <p>I have successfully completed a MERN Stack Development Course from Veer Narmad South
-                                Gujarat
-                                University.</p>
-                            <p class="m-0">2024</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="education-card p-3 col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-black rounded border border-secondary">
-                        <img src="assets/vnsgu.jpg" class="w-100" style="height: 265px;" alt="Education Image">
-                        <div class="p-3">
-                            <h6>3. VEER NARMAD SOUTH GUJARAT UNIVERSITY</h6>
-                            <p>I am currently studying Bachelor of Computer Applications (BCA) at Veer Narmad South
-                                Gujarat
-                                University with good grades.</p>
-                            <p class="m-0">2023 - 2026</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="education-card p-3 col-sm-12 col-md-6 col-lg-4">
-                    <div class="bg-black rounded border border-secondary">
-                        <img src="assets/RedSlash.jpeg" class="w-100" style="height: 265px;" alt="Redslash Internship">
-                        <div class="p-3">
-                            <h6>4. Internship Certificate - Redslash</h6>
-                            <p>
-                                Selected for MERN Stack Internship at <strong>Redslash</strong>, an IT company focused
-                                on UI/UX, Web & Mobile Development, and Machine Learning. <br><br>
-                                Internship Duration: <strong>Jan 2025 – April 2025</strong>.
-                            </p>
-                            <a href="Raj_Internship_Certificate.pdf" target="_blank"
-                                class="btn btn-sm btn-outline-success mt-2">
-                                📄 View Certificate
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <section class="section py-5 my-5 text-white" data-aos="fade-up">
+      <h1
+        class="z2 m-0 my-5 text-center fs-title-small"
+        style="font-size: 64px"
+      >
+        CERTIFICATES
+      </h1>
+      <div class="container mt-5">
+        <div class="education-container row justify-content-center">
+          <!-- Card 1 -->
+          <div
+            class="education-card p-3 col-sm-12 col-md-6 col-lg-4"
+            data-aos="fade-up"
+          >
+            <div class="bg-black rounded border border-secondary">
+              <img
+                src="assets/Morsy.jpg"
+                class="w-100"
+                alt="Morsy Multimedia"
+              />
+              <div class="p-3">
+                <h6>1. Morsy MULTIMEDIA</h6>
+                <p>
+                  My IT journey began at Morsy Multimedia, where I successfully
+                  completed a Full Stack Development Course with excellent
+                  grades.
+                </p>
+                <p class="m-0">2023 - 2024</p>
+              </div>
             </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="education-card p-3 col-sm-12 col-md-6 col-lg-4"
+            data-aos="fade-up"
+          >
+            <div class="bg-black rounded border border-secondary">
+              <img
+                src="assets/education.jpg"
+                class="w-100"
+                style="background-repeat: no-repeat"
+                alt="MERN Stack Development"
+              />
+              <div class="p-3">
+                <h6>2. VEER NARMAD SOUTH GUJARAT UNIVERSITY</h6>
+                <p>
+                  I have successfully completed a MERN Stack Development Course
+                  from Veer Narmad South Gujarat University.
+                </p>
+                <p class="m-0">2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="education-card p-3 col-sm-12 col-md-6 col-lg-4"
+            data-aos="fade-up"
+          >
+            <div class="bg-black rounded border border-secondary">
+              <img
+                src="assets/vnsgu.jpg"
+                class="w-100"
+                style="height: 265px"
+                alt="Education Image"
+              />
+              <div class="p-3">
+                <h6>3. VEER NARMAD SOUTH GUJARAT UNIVERSITY</h6>
+                <p>
+                  I am currently studying Bachelor of Computer Applications
+                  (BCA) at Veer Narmad South Gujarat University with good
+                  grades.
+                </p>
+                <p class="m-0">2023 - 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="education-card p-3 col-sm-12 col-md-6 col-lg-4"
+            data-aos="fade-up"
+          >
+            <div class="bg-black rounded border border-secondary">
+              <img
+                src="assets/RedSlash.jpeg"
+                class="w-100"
+                style="height: 265px"
+                alt="Redslash Internship"
+              />
+              <div class="p-3">
+                <h6>4. Internship Certificate - Redslash</h6>
+                <p>
+                  Selected for MERN Stack Internship at
+                  <strong>Redslash</strong>, an IT company focused on UI/UX, Web
+                  & Mobile Development, and Machine Learning. <br /><br />
+                  Internship Duration: <strong>Jan 2025 – April 2025</strong>.
+                </p>
+                <a
+                  href="Raj_Internship_Certificate.pdf"
+                  target="_blank"
+                  class="btn btn-sm btn-outline-success mt-2"
+                >
+                  📄 View Certificate
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
-
+      </div>
     </section>
 
     <!-- Bootstrap JS (for navbar toggling) -->
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
+  </body>
 </html>

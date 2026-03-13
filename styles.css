@@ -8,26 +8,41 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #000;
-    /* color: #fff; */
+    color: #fff;
+}
+
+.card {
+    background-color: #111 !important;
+    color: #fff !important;
+    border: 1px solid #222 !important;
 }
 
 header .container .navbar-collapse .nav-underline .nav-link.active {
     border-bottom: 3px solid white;
 }
 
-.profile-img {
+/* .profile-img {
     width: 500px;
     height: 500px;
     object-fit: cover;
     border-radius: 50%;
-}
+} */
+
+/* .profile-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+} */
 
 .profile-img {
-    width: 500px;
-    /* Adjust as needed */
-    height: 500px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 50%;
+    object-position: center top;
+    /* shows the head properly */
+    aspect-ratio: 1 / 1;
+    /* ensures it's perfectly circular */
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {
@@ -74,34 +89,14 @@ header .container .navbar-collapse .nav-underline .nav-link.active {
     color: #000000;
 }
 
-/* jQuery Animation */
-/* .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+.btn-gradient {
+    background: linear-gradient(to right, #0c1a39, #1a468b, #4a7cc5, #96b8e6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-button {
-    border: 1px solid white;
-    border-radius: 10%;
-    color: white;
-} */
-
-.section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-/* When visible, fade-in animation */
-.section.show {
-    opacity: 1;
-    transform: translateY(0);
+.btn-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(74, 124, 197, 0.4);
 }
 
 /* How wo do work */
@@ -358,4 +353,52 @@ button {
     .timeline-content p {
         padding-left: 20px;
     }
+
+    /* Global Responsive Typography */
+    h1 {
+        font-size: 2.5rem !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    h3 {
+        font-size: 1.75rem !important;
+    }
+
+    p {
+        font-size: 0.95rem !important;
+    }
+
+    .fs-title-small {
+        font-size: 40px !important;
+    }
+
+    .about-content h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .about-content h1.fw-bold {
+        font-size: 3rem !important;
+    }
+
+    .about-content h3 {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Offcanvas Menu Fixes */
+.offcanvas {
+    background-color: #f8f9fa !important;
+}
+
+.offcanvas .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+}
+
+.offcanvas-header h1 {
+    color: #000 !important;
+    border-color: #000 !important;
 }
