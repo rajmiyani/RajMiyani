@@ -73,8 +73,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
 
-    <!-- ✅ Spline 3D Viewer (Optional 3D animations) -->
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"></script>
+    <!-- ✅ Spline 3D Viewer Removed -->
 
     <!-- ✅ Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEY6LGD6EX"></script>
@@ -114,10 +113,10 @@
             <div class="d-none d-lg-block">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="index.html">Home</a>
+                        <a class="nav-link text-white" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
+                        <a class="nav-link active text-white" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="service.html">Services</a>
@@ -148,10 +147,10 @@
             <div class="offcanvas-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active text-black" href="index.html">Home</a>
+                        <a class="nav-link text-black" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="about.html">About</a>
+                        <a class="nav-link active text-black" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-black" href="service.html">Services</a>
@@ -170,14 +169,7 @@
     <!-- about -->
     <section class="section " data-aos="fade-up" my-5 position-relative">
         <div class="container h-100 dja" id="about">
-            <div class="position-absolute d-none d-lg-block top-0 start-0" style="transform: translateY(-10%)">
-                <!-- <spline-viewer
-            class="w-100 z1"
-            url="https://prod.spline.design/owcbLMDqmRh-PrdD/scene.splinecode"
-          ></spline-viewer> -->
 
-                <!-- <spline-viewer url="https://prod.spline.design/7ix3k8IoIhm8AdvH/scene.splinecode"></spline-viewer> -->
-            </div>
             <div class="col-lg-6"></div>
             <h1 class="m-0 mt-0 fs-title-small pt-5 px-3 px-lg-0 text-white d-flex justify-content-center"
                 style="font-size: 64px;">
@@ -221,7 +213,8 @@
 
                     <!-- Right Image (Show only on large screens >992px) -->
                     <div class="col-lg-6 d-none d-lg-block text-center" style="margin-top: 100px;">
-                        <img src="assets/AboutUs.webp" alt="Raj Miyani - About MERN Stack Development Experience" class="rounded-circle img-fluid"
+                        <img src="assets/AboutUs.webp" alt="Raj Miyani - About MERN Stack Development Experience"
+                            class="rounded-circle img-fluid"
                             style="max-width: 500px; box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);">
                     </div>
                 </div>
@@ -369,7 +362,7 @@
 
     <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({duration: 800, once: true});</script>
+    <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 
 </html>

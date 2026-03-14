@@ -21,19 +21,7 @@ header .container .navbar-collapse .nav-underline .nav-link.active {
     border-bottom: 3px solid white;
 }
 
-/* .profile-img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 50%;
-} */
 
-/* .profile-img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 50%;
-} */
 
 .profile-img {
     width: 100%;
